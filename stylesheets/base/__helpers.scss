@@ -1,0 +1,17 @@
+
+//CARD SECTION//
+
+%card{
+  border:1px solid grey;
+  height:450px;
+  position:relative;
+  width:290px;
+}
+
+%card__image{
+  position:relative;
+  top:-60px;
+  z-index:-1;
+}
+
+////////////////

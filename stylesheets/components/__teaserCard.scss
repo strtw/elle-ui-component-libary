@@ -1,8 +1,5 @@
 .teaserCard{
-  border:1px solid grey;
-  height:450px;
-  position:relative;
-  width:290px;
+  @extend %card;
 }
 
 .teaserCard__categoryHeader{
@@ -11,9 +8,7 @@
 }
 
 .teaserCard__image{
-  position:relative;
-  top:-60px;
-  z-index:-1;
+ @extend %card__image;
 }
 
 .teaserCard__dateText{
