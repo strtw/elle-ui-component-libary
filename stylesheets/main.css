@@ -1,24 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+* {
+  box-sizing: border-box; }
+
 .teaserCard {
   border: 1px solid grey;
   height: 450px;
   position: relative;
   width: 290px; }
 
-.teaserCard__categoryHeader {
-  left: 10px;
-  position: relative; }
-
 .teaserCard__image {
   position: relative;
   top: -60px;
   z-index: -1; }
 
+.teaserCard__categoryHeader {
+  left: 10px;
+  position: relative; }
+
 .teaserCard__dateText {
+  font-family: "Roboto", serif;
   left: 18px;
   position: relative;
   top: -60px; }
 
 .teaserCard__articleHeader {
+  font-family: "Roboto", serif;
   left: 20px;
   position: relative;
   top: -60px; }
@@ -30,6 +36,7 @@
   top: -65px; }
 
 .teaserCard__content {
+  font-family: "Open Sans", sans-serif;
   left: 20px;
   position: relative;
   top: -60px;
@@ -43,8 +50,5 @@
   position: relative;
   top: -70px;
   left: 150px; }
-
-* {
-  box-sizing: border-box; }
 
 /*# sourceMappingURL=main.css.map */
