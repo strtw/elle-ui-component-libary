@@ -1,5 +1,6 @@
 .teaserCard{
   @extend %card;
+  background-color:$test;
 }
 
 .teaserCard__categoryHeader{
