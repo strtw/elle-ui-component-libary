@@ -12,12 +12,14 @@
 }
 
 .teaserCard__dateText{
+  font-family: $roboto-slab;
   left:18px;
   position:relative;
   top:-60px;
 }
 
 .teaserCard__articleHeader{
+  font-family: $roboto-slab;
   left: 20px;
   position: relative;
   top: -60px;
@@ -32,6 +34,7 @@
 }
 
 .teaserCard__content{
+  font-family: $open-sans;
   left: 20px;
   position: relative;
   top: -60px;
