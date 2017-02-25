@@ -1,5 +1,10 @@
 .colorSwatch__container{
 	margin: 5px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	width: 15%;
 }
 
 .colorSwatch__colorBlock{
@@ -10,6 +15,7 @@
 
 .colorSwatch__colorName{
 	text-align: center;
+	margin-top: 5px;
 }
 
 .colorSwatch__colorBlock--baseColorDark{
@@ -26,4 +32,20 @@
 
 .colorSwatch__colorBlock--baseColorAlt{
 	background-color: $baseColorAlt;
+}
+
+.colorSwatch__colorBlock--defaultColor{
+	background-color: $defaultColor;
+}
+
+.colorSwatch__colorBlock--defaultColorLight{
+	background-color: $defaultColorLight;
+}
+
+.colorSwatch__colorBlock--invertDefaultColor{
+	background-color: $invertDefaultColor;
+}
+
+.colorSwatch__colorBlock--altColor{
+	background-color: $altColor;
 }
