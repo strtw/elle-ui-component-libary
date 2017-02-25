@@ -2,7 +2,7 @@
 //CARD SECTION//
 
 %card{
-  border:1px solid grey;
+  border:1px solid $altColor;
   border-radius:3px;
   height:450px;
   margin:40px;
@@ -13,6 +13,7 @@
 %card__image{
   position:relative;
   z-index:-1;
+  max-width: 100%;
 }
 
 ////////////////
