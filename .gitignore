@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+*.scssc
+*.map
+.idea/MD-hackathon-team-1.iml
+.idea/inspectionProfiles/
+.idea/modules.xml
+.idea/vcs.xml
+.idea/watcherTasks.xml
+.idea/workspace.xml
+
+

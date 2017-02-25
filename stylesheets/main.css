@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #202020; }
 
 .teaserCard {
   border: 1px solid grey;
+  border-radius: 3px;
   height: 450px;
   position: relative;
   width: 290px; }
@@ -14,10 +16,12 @@
   z-index: -1; }
 
 .teaserCard__categoryHeader {
+  color: #FFFFFF;
   left: 10px;
   position: relative; }
 
 .teaserCard__dateText {
+  color: #BDBDBD;
   font-family: "Roboto", serif;
   left: 18px;
   position: relative;
@@ -30,7 +34,7 @@
   top: -60px; }
 
 .teaserCard__horizontalLine {
-  border-width: 3px;
+  border: 2px solid #EF4381;
   margin: 20px;
   position: relative;
   top: -65px; }
@@ -42,13 +46,14 @@
   top: -60px;
   width: 84%; }
 
-.teaserCard__button {
-  border: 1px solid;
+.button--primary {
+  background-color: #EA1B64;
   border-radius: 3px;
+  color: #FFFFFF;
   display: inline-block;
+  left: 147px;
   padding: 10px 18px;
   position: relative;
-  top: -70px;
-  left: 150px; }
+  top: -50px; }
 
 /*# sourceMappingURL=main.css.map */
