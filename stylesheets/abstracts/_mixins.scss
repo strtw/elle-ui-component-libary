@@ -36,3 +36,25 @@
   font-family:$headerFont;
   font-weight:$weightBold;
 }
+
+//Link Mixins
+
+@mixin lovehate($self: false) { //Link Visited Hover Active
+  @if $self {
+    &{    //usage @include lovehate{} OR @include lovehate{$self:true}
+      text-decoration: none;
+    };
+    &,
+    &:visited,
+    &:hover,
+    &:active {
+      @content;
+    }
+  } @else {
+    &:visited,
+    &:hover,
+    &:active {
+      @content;
+    }
+  }
+}

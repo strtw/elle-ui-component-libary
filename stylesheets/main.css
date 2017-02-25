@@ -13,6 +13,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .button--primary {
   border-radius: 3px;
+  display: inline-block;
+  position: relative;
   margin: 10px;
   padding: 5px; }
 
@@ -41,8 +43,6 @@ h1, h2, h3, h4, h5, h6 {
 .button--primary {
   background-color: #EA1B64;
   color: #FFFFFF;
-  display: inline-block;
-  position: relative;
   transition: 0.2s background-color; }
   .button--primary:hover {
     background-color: #EF4381; }

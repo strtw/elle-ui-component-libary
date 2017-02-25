@@ -3,6 +3,8 @@
 
 %button{
   border-radius: $borderRoundedSoft;
+  display: inline-block;
+  position: relative;
   @include componentBoxMed;
 }
 
