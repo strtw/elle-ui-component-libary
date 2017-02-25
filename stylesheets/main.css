@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700");
 * {
   box-sizing: border-box;
   color: #202020; }
@@ -63,63 +63,8 @@
 .componentContainer__display--flex {
   display: flex; }
 
-.contactCard__horizontalLine {
-  border: 2px solid #EF4381;
-  margin: 20px;
-  position: relative; }
-
-.contactCard__content {
-  color: #535353;
-  font-family: "Open Sans", sans-serif;
-  left: 20px;
-  position: relative;
-  width: 84%; }
-
-.teaserCard__categoryHeader {
-  color: #FFFFFF;
-  left: 10px;
-  position: absolute; }
-
-.teaserCard__dateText {
-  color: #BDBDBD;
-  font-family: "Roboto", serif;
-  left: 18px;
-  position: relative; }
-
-.teaserCard__articleHeader {
-  font-family: "Roboto", serif;
-  left: 20px;
-  position: relative; }
-
-.teaserCard__horizontalLine {
-  border: 2px solid #EF4381;
-  margin: 20px;
-  position: relative;
-  top: -5px; }
-
-.teaserCard__content {
-  color: #535353;
-  font-family: "Open Sans", sans-serif;
-  left: 20px;
-  position: relative;
-  width: 84%; }
-
-<<<<<<< HEAD
-.button--primary {
-  background-color: #EA1B64;
-  border-radius: 3px;
-  color: #FFFFFF;
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 18px;
-  position: absolute;
-  transition: 0.2s background-color; }
-  .button--primary:hover {
-    background-color: #EF4381; }
-
 .contactCard__profileImage {
   position: relative;
-  border: 1px solid white;
   border-radius: 50%;
   top: -60px;
   width: 120px;
@@ -132,14 +77,46 @@
   position: relative; }
 
 .contactCard__name {
+  color: #C31F5D;
   margin: -20px 0 20px 0;
   text-align: center; }
 
 .contactCard__content {
   color: #535353;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   text-align: center; }
 
-=======
->>>>>>> 6f032f3f8e21af12778dc2631154fdfd76b41389
+.teaserCard__categoryHeader {
+  color: #FFFFFF;
+  left: 10px;
+  position: absolute; }
+
+.teaserCard__dateText {
+  color: #BDBDBD;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  left: 18px;
+  position: relative; }
+
+.teaserCard__articleHeader {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  left: 20px;
+  position: relative; }
+
+.teaserCard__horizontalLine {
+  border: 2px solid #EF4381;
+  margin: 20px;
+  position: relative;
+  top: -5px; }
+
+.teaserCard__content {
+  color: #535353;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  left: 20px;
+  position: relative;
+  width: 84%; }
+
 /*# sourceMappingURL=main.css.map */

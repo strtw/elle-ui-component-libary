@@ -8,7 +8,6 @@
 
 .contactCard__profileImage{
   position: relative;
-  border: 1px solid white;
   border-radius: 50%;
   top: -60px;
   width: 120px;
@@ -23,12 +22,13 @@
 }
 
 .contactCard__name{
+  color:$baseColorDark;
   margin: -20px 0 20px 0;
   text-align: center;
 }
 
 .contactCard__content{
   color:$defaultColorLight;
-  font-family: $open-sans;
+  @include fontContent;
   text-align: center;
 }

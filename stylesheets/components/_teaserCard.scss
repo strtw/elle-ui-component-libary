@@ -15,13 +15,13 @@
 
 .teaserCard__dateText{
   color:$altColor;
-  font-family: $roboto-slab;
+  @include fontContent;
   left:18px;
   position:relative;
 }
 
 .teaserCard__articleHeader{
-  font-family: $roboto-slab;
+  @include fontHeaderBold;
   left: 20px;
   position: relative;
 }
@@ -36,7 +36,7 @@
 
 .teaserCard__content{
   color:$defaultColorLight;
-  font-family: $open-sans;
+  @include fontContent;
   left: 20px;
   position: relative;
   width: 84%;

@@ -38,8 +38,9 @@ https://github.com/HugoGiraudel/sass-boilerplate
 ### Ruben
 
 ### Stu
-- Buttons? (1)
+- Buttons (1)
 - Cards (2,3,4)
+- 
 
 ### Other Ideas
 - Tables

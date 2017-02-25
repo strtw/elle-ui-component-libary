@@ -1,0 +1,38 @@
+
+//Box Model Mixins
+
+@mixin componentBoxLarge(){
+  margin:$baseMargin;
+  padding:$basePadding;
+}
+@mixin componentBoxMed(){
+  margin:$baseMargin/2;
+  padding:$basePadding/2;
+}
+
+@mixin componentBoxSmall(){
+  margin:$baseMargin/4;
+  padding:$basePadding/4;
+}
+
+//Font Mixins
+
+@mixin fontHeaderBold(){
+  font-family:$headerFont;
+  font-weight:$weightBold;
+}
+
+@mixin fontHeaderDefault(){
+  font-family:$headerFont;
+  font-weight:$weightRegular;
+}
+
+@mixin fontContent(){
+  font-family:$fontContent;
+  font-weight:$weightRegular;
+}
+
+@mixin fontContentBold(){
+  font-family:$headerFont;
+  font-weight:$weightBold;
+}

@@ -1,9 +1,15 @@
 // Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700');
 
-// Font Variables
-$roboto-slab: 'Roboto', serif;
-$open-sans: 'Open Sans', sans-serif;
+$roboto:'Roboto', serif;
+$open-sans:'Open Sans', sans-serif;
+
+// Font Variables - find related in _mixins
+$headerFont: 'Roboto', serif;
+$fontContent: 'Open Sans', sans-serif;
+$weightRegular:400;
+$weightBold:700;
+
 
 $baseColorDark: #C31F5D;
 $baseColorMed: #EA1B64;
@@ -23,3 +29,11 @@ $transitionSlow: .8s;
 //Div Shape Variables
 
 $borderRoundedSoft:3px;
+
+//Box Model Variables -- find related in _mixins
+
+$baseMargin:20px;
+$basePadding:10px;
+
+
+
