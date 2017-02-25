@@ -9,3 +9,5 @@
 .idea/workspace.xml
 *.scssc
 *.map
+/stylesheets/main.css.map
+/stylesheets/main.css
