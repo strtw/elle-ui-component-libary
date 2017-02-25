@@ -3,10 +3,9 @@
   border-radius: 3px;
   color:$invertDefaultColor;
   display: inline-block;
-  left: 147px;
+  margin:10px;
   padding: 10px 18px;
-  position: relative;
-  top: -50px;
+  position: absolute;
   transition:$transitionFast background-color;
   &:hover{
     background-color: $baseColorLight;
