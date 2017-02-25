@@ -1,11 +1,9 @@
 .button--primary{
+  @extend %button;
   background-color: $baseColorMed;
-  border-radius: 3px;
   color:$invertDefaultColor;
   display: inline-block;
-  margin:10px;
-  padding: 10px 18px;
-  position: absolute;
+  position: relative;
   transition:$transitionFast background-color;
   &:hover{
     background-color: $baseColorLight;

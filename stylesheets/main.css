@@ -11,10 +11,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", serif;
   font-weight: 400; }
 
+.button--primary {
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px; }
+
 .contactCard, .teaserCard {
   border: 1px solid #BDBDBD;
   border-radius: 3px;
-  height: 450px;
   margin: 40px;
   position: relative;
   width: 290px; }
@@ -25,10 +29,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%; }
 
 .right {
-  right: 0px; }
+  float: right; }
 
 .left {
-  left: 0px; }
+  float: left; }
 
 .center {
   margin-left: auto;
@@ -36,12 +40,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .button--primary {
   background-color: #EA1B64;
-  border-radius: 3px;
   color: #FFFFFF;
   display: inline-block;
-  margin: 10px;
-  padding: 10px 18px;
-  position: absolute;
+  position: relative;
   transition: 0.2s background-color; }
   .button--primary:hover {
     background-color: #EF4381; }
@@ -118,6 +119,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 .contactCard__iconContainer {
+  margin: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }

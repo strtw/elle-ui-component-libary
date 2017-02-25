@@ -36,6 +36,7 @@
 }
 
 .contactCard__iconContainer{
+  @include componentBoxMed;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
