@@ -11,6 +11,7 @@
     background-color: $baseColorDark;
     color:$invertDefaultColor;
   }
+  @include faMatchElemState($baseColorMed,$invertDefaultColor,$invertDefaultColor);
 }
 
 .button--primarySolid{
@@ -24,7 +25,10 @@
   &:active{
     background-color: $baseColorDark;
   }
+  @include faMatchElemState($invertDefaultColor,$invertDefaultColor,$invertDefaultColor);
 }
+
+
 
 .button--disabled{
   @extend %button;
@@ -41,3 +45,21 @@
   }
 }
 
+
+.button--primary--round{
+  @extend .button--primary;
+}
+
+.button--primarySolid--round{
+  @extend .button--primarySolid;
+}
+
+.button--disabled--round{
+  @extend .button--disabled;
+}
+
+.button--primary--round,
+.button--primarySolid--round,
+.button--disabled{
+  border-radius:$borderRoundedHard;
+}

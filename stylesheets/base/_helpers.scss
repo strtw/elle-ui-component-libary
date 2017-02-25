@@ -6,7 +6,7 @@
   cursor:pointer;
   display: inline-block;
   position: relative;
-  @include componentBoxMed;
+  @include componentBoxLarge;
   @include lovehate{$self:true}
   transition:$transitionFast background-color;
 }

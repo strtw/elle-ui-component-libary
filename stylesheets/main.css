@@ -11,13 +11,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", serif;
   font-weight: 400; }
 
-.button--primary, .button--primarySolid, .button--disabled {
+.button--primary, .button--primary--round, .button--primarySolid, .button--primarySolid--round, .button--disabled, .button--disabled--round {
   border-radius: 3px;
   cursor: pointer;
   display: inline-block;
   position: relative;
-  margin: 10px;
-  padding: 5px;
+  margin: 20px;
+  padding: 10px;
   transition: 0.2s background-color; }
 
 .contactCard, .teaserCard {
@@ -42,35 +42,55 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto; }
 
-.button--primary {
+.button--primary, .button--primary--round {
   background-color: #FFFFFF;
   border: 2px solid #EA1B64;
   color: #EA1B64; }
-  .button--primary:hover {
+  .button--primary:hover, .button--primary--round:hover {
     background-color: #EF4381;
     color: #FFFFFF; }
-  .button--primary:active {
+  .button--primary:active, .button--primary--round:active {
     background-color: #C31F5D;
     color: #FFFFFF; }
+  .button--primary > i[class*="fa-"], .button--primary--round > i[class*="fa-"] {
+    color: #EA1B64;
+    margin-right: 6px; }
+  .button--primary:hover > i[class*="fa-"], .button--primary--round:hover > i[class*="fa-"] {
+    color: #FFFFFF; }
+  .button--primary:active > i[class*="fa-"], .button--primary--round:active > i[class*="fa-"] {
+    color: #FFFFFF; }
 
-.button--primarySolid {
+.button--primarySolid, .button--primarySolid--round {
   background-color: #EA1B64;
   color: #FFFFFF; }
-  .button--primarySolid:hover {
+  .button--primarySolid:hover, .button--primarySolid--round:hover {
     background-color: #EF4381; }
-  .button--primarySolid:active {
+  .button--primarySolid:active, .button--primarySolid--round:active {
     background-color: #C31F5D; }
+  .button--primarySolid > i[class*="fa-"], .button--primarySolid--round > i[class*="fa-"] {
+    color: #FFFFFF;
+    margin-right: 6px; }
+  .button--primarySolid:hover > i[class*="fa-"], .button--primarySolid--round:hover > i[class*="fa-"] {
+    color: #FFFFFF; }
+  .button--primarySolid:active > i[class*="fa-"], .button--primarySolid--round:active > i[class*="fa-"] {
+    color: #FFFFFF; }
 
-.button--disabled {
+.button--disabled, .button--disabled--round {
   background-color: #BDBDBD;
   border: 2px solid #6D6D6D;
   color: #FFFFFF; }
-  .button--disabled:hover {
+  .button--disabled:hover, .button--disabled--round:hover {
     background-color: #BDBDBD;
     color: #FFFFFF; }
-  .button--disabled:active {
+  .button--disabled:active, .button--disabled--round:active {
     background-color: #BDBDBD;
     color: #FFFFFF; }
+
+.button--primary--round,
+.button--primarySolid--round,
+.button--disabled,
+.button--disabled--round {
+  border-radius: 20px; }
 
 .colorSwatch__container {
   margin: 5px;
@@ -78,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 15%; }
+  overflow: hidden; }
 
 .colorSwatch__colorBlock {
   border: 1px solid black;
@@ -115,7 +135,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .componentContainer__display {
   display: flex;
-  align-items: flex-start; }
+  align-items: flex-start;
+  flex-flow: row wrap; }
 
 .contactCard__profileImage {
   position: relative;
