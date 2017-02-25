@@ -13,7 +13,13 @@ https://github.com/HugoGiraudel/sass-boilerplate
 - Stu
 
 ## Components Designed 
-(Minimum of 4 per Person)
+- Minimum of 4 per Person
+- Need 2 'Innovative' Components 
+	- Each team must submit two innovative UI elements. An innovative UI element is one that you create out of your own imagination; it has never been seen anywhere online. All of the following meet the standard for innovative UI element:
+		- Create a different or better UI of an existing UI element
+		- Create a new form of experience with common UI elements or user actions
+		- Create a new form of UI element
+
 
 ### Brian
 - Carousels (16,17,18)
