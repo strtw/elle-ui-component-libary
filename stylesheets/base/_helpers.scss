@@ -5,14 +5,27 @@
   border:1px solid grey;
   border-radius:3px;
   height:450px;
+  margin:40px;
   position:relative;
   width:290px;
 }
 
 %card__image{
   position:relative;
-  top:-60px;
   z-index:-1;
 }
 
 ////////////////
+
+.right{
+  right:0px;
+}
+
+.left{
+  left:0px;
+}
+
+.center{
+  margin-left:auto;
+  margin-right:auto;
+}
