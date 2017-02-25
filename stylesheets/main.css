@@ -60,4 +60,30 @@
   .button--primary:hover {
     background-color: #EF4381; }
 
+.colorSwatch__container {
+  margin: 5px; }
+
+.colorSwatch__colorBlock {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px; }
+
+.colorSwatch__colorName {
+  text-align: center; }
+
+.colorSwatch__colorBlock--baseColorDark {
+  background-color: #C31F5D; }
+
+.colorSwatch__colorBlock--baseColorMed {
+  background-color: #EA1B64; }
+
+.colorSwatch__colorBlock--baseColorLight {
+  background-color: #EF4381; }
+
+.colorSwatch__colorBlock--baseColorAlt {
+  background-color: #CF477C; }
+
+.componentContainer__display--flex {
+  display: flex; }
+
 /*# sourceMappingURL=main.css.map */
