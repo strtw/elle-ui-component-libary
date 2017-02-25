@@ -54,6 +54,9 @@
   left: 147px;
   padding: 10px 18px;
   position: relative;
-  top: -50px; }
+  top: -50px;
+  transition: 0.2s background-color; }
+  .button--primary:hover {
+    background-color: #EF4381; }
 
 /*# sourceMappingURL=main.css.map */

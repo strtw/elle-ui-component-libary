@@ -7,4 +7,8 @@
   padding: 10px 18px;
   position: relative;
   top: -50px;
+  transition:$transitionFast background-color;
+  &:hover{
+    background-color: $baseColorLight;
+  }
 }
