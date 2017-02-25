@@ -12,6 +12,7 @@ https://github.com/HugoGiraudel/sass-boilerplate
 - Ruben 
 - Stu
 
+
 ## Components Designed 
 - Minimum of 4 per Person
 - Need 2 'Innovative' Components 
@@ -52,3 +53,15 @@ https://github.com/HugoGiraudel/sass-boilerplate
 - [Materilaize Components](http://materializecss.com/badges.html)
 - [Material Design for Bootstrap Components](https://mdbootstrap.com/components/buttons/)
 - [Zurb Foundation Components](http://foundation.zurb.com/sites/docs/v/5.5.3/components/buttons.html)
+
+
+## Workflow 
+1a. Update component HTML in name_componentDev folder
+1b. Update SCSS in stylesheets/components folders
+2. Test in FF/Chrome/Safari -> if issues repeat step 1a/1b
+3. Code review
+4. Add component to index.html
+
+## To Do 
+- Determine breakpoints
+- Add variables for padding/margin
