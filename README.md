@@ -56,11 +56,11 @@ https://github.com/HugoGiraudel/sass-boilerplate
 
 
 ## Workflow 
-1a. Update component HTML in name_componentDev folder
-1b. Update SCSS in stylesheets/components folders
-2. Test in FF/Chrome/Safari -> if issues repeat step 1a/1b
-3. Code review
-4. Add component to index.html
+1. Update component HTML in name_componentDev folder
+2. Update SCSS in stylesheets/components folders
+3. Test in FF/Chrome/Safari -> if issues repeat step 1/2
+4. Code review
+5. Add component to index.html
 
 ## To Do 
 - Determine breakpoints
