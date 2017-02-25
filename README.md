@@ -1,31 +1,48 @@
+# Feb 2017 UI Framework Hackathon - Team 1 UI Framework
 ## Project Background
-
+- [UI Frameworks Hackathon Details](https://qa.moderndeveloper.com/t/ui-frameworks-hackathon-details/2500)
 - Working off of Design 5 
 - Using 7-1 project style as seen here: 
 https://github.com/HugoGiraudel/sass-boilerplate
 
 ## Members: 
-Brian - New York, UTC-5/EST
-PJ
-Rafael
-Ruben 
-Stu
+- Brian - New York, UTC-5/EST
+- PJ
+- Rafael
+- Ruben 
+- Stu
 
-## Components: 
+## Components Designed 
+(Minimum of 4 per Person)
 
-Brian
-- Carousels
-- Progress Bar
+### Brian
+- Carousels (16,17,18)
+- Progress Bar 
+- Tables
+- Experimental?
 
-PJ
-- Accordion
+### PJ
+- Accordion (5,6,7)
 
-Rafael 
-- Form
-- Checkbox/Radio Buttons
+### Rafael 
+- Form (15a)
+- Checkbox/Radio (15b)
 
-Ruben
+### Ruben
 
-Stu
-- Buttons ?
-- Cards
+### Stu
+- Buttons? (1)
+- Cards (2,3,4)
+
+### Other Ideas
+- Tables
+- Header/Footer
+- Lists
+- Jumbotron
+- Social Media Buttons
+
+### For more ideas see:
+- [Bootstrap Components](http://getbootstrap.com/components/)
+- [Materilaize Components](http://materializecss.com/badges.html)
+- [Material Design for Bootstrap Components](https://mdbootstrap.com/components/buttons/)
+- [Zurb Foundation Components](http://foundation.zurb.com/sites/docs/v/5.5.3/components/buttons.html)
