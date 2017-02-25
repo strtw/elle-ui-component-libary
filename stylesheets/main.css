@@ -66,16 +66,27 @@
   .button--primary:hover {
     background-color: #EF4381; }
 
+.contactCard__profileImage {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 50%;
+  top: -60px;
+  width: 120px;
+  display: block;
+  margin: 0 auto; }
+
 .contactCard__horizontalLine {
-  border: 2px solid #EF4381;
+  border: 2px solid #BDBDBD;
   margin: 20px;
   position: relative; }
+
+.contactCard__name {
+  margin: -20px 0 20px 0;
+  text-align: center; }
 
 .contactCard__content {
   color: #535353;
   font-family: "Open Sans", sans-serif;
-  left: 20px;
-  position: relative;
-  width: 84%; }
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
