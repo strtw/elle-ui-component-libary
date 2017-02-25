@@ -1,10 +1,18 @@
 
+/////BUTTONS//////
+
+%button{
+  border-radius: $borderRoundedSoft;
+  display: inline-block;
+  position: relative;
+  @include componentBoxMed;
+}
+
 //CARD SECTION//
 
 %card{
-  border:1px solid grey;
+  border:1px solid $altColor;
   border-radius:3px;
-  height:450px;
   margin:40px;
   position:relative;
   width:290px;
@@ -13,19 +21,21 @@
 %card__image{
   position:relative;
   z-index:-1;
+  max-width: 100%;
 }
 
-////////////////
+//Positional Classes///
 
 .right{
-  right:0px;
+  float:right;
 }
 
 .left{
-  left:0px;
+  float:left;
 }
 
 .center{
   margin-left:auto;
   margin-right:auto;
 }
+

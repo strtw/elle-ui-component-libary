@@ -1,11 +1,8 @@
 .button--primary{
+  @extend %button;
+  @include lovehate{$self:true}
   background-color: $baseColorMed;
-  border-radius: 3px;
   color:$invertDefaultColor;
-  display: inline-block;
-  margin:10px;
-  padding: 10px 18px;
-  position: absolute;
   transition:$transitionFast background-color;
   &:hover{
     background-color: $baseColorLight;
