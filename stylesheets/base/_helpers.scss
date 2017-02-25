@@ -3,9 +3,12 @@
 
 %button{
   border-radius: $borderRoundedSoft;
+  cursor:pointer;
   display: inline-block;
   position: relative;
   @include componentBoxMed;
+  @include lovehate{$self:true}
+  transition:$transitionFast background-color;
 }
 
 //CARD SECTION//
