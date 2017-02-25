@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #202020; }
 
 .teaserCard {
   border: 1px solid grey;
