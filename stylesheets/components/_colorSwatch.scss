@@ -1,0 +1,29 @@
+.colorSwatch__container{
+	margin: 5px;
+}
+
+.colorSwatch__colorBlock{
+	border: 1px solid black;
+	height: 100px;
+	width: 100px;
+}
+
+.colorSwatch__colorName{
+	text-align: center;
+}
+
+.colorSwatch__colorBlock--baseColorDark{
+	background-color: $baseColorDark;
+}
+
+.colorSwatch__colorBlock--baseColorMed{
+	background-color: $baseColorMed;
+}
+
+.colorSwatch__colorBlock--baseColorLight{
+	background-color: $baseColorLight;
+}
+
+.colorSwatch__colorBlock--baseColorAlt{
+	background-color: $baseColorAlt;
+}
