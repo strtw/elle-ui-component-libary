@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-
     <link rel="stylesheet" href="../stylesheets/normalize.css">
     <link rel="stylesheet" href="../stylesheets/main.css">
-
     <script src="https://use.fontawesome.com/fdce4b5bc4.js"></script>
-    
 </head>
+
 <body>
-
-<section class="componentSection">
-
-    <h2 class="componentSection__header">Photo Carousels</h2>
-    <p class="componentSection__description">Display groups of photos in an eye-grabbing manner </p>
-    <h3 class="componentSection__subheader">Full Carousel </h3>
-    <p class="componentSection__subDescription">A large carousel that displays one large photo at a time</p>
-    <div class="componentSection__componentContainer">
-        <div class="componentContainer__display">
-            <div class="fullCarousel">
-
-                <div class="fullCarousel__viewer">
-                    <img class="fullCarousel__image" src="http://placehold.it/350x150">
+    <section class="componentSection">
+        <h2 class="componentSection__header">Photo Carousels</h2>
+        <p class="componentSection__description">Display groups of photos in an eye-grabbing manner </p>
+        <h3 class="componentSection__subheader">Full Carousel </h3>
+        <p class="componentSection__subDescription">A large carousel that displays one large photo at a time</p>
+        <div class="componentSection__componentContainer">
+            <div class="componentContainer__display">
+                <div class="fullCarousel" id="fullCarouselA">
+                    <input class="fullCarousel__switch" id="fullCarouselA1" type="radio" name="fullCarouselA" checked>
+                    <input class="fullCarousel__switch" id="fullCarouselA2" type="radio" name="fullCarouselA">
+                    <input class="fullCarousel__switch" id="fullCarouselA3" type="radio" name="fullCarouselA">
+                    <input class="fullCarousel__switch" id="fullCarouselA4" type="radio" name="fullCarouselA">
+                    <div class="fullCarousel__viewer">
+                        <img class="fullCarousel__image" src="../images/carouselStockA.jpg">
+                        <img class="fullCarousel__image" src="../images/carouselStockB.jpg">
+                        <img class="fullCarousel__image" src="../images/carouselStockD.jpg">
+                        <img class="fullCarousel__image" src="../images/carouselStockE.jpg">
+                    </div>
+                    <div class="fullCarousel__thumbnails">
+                        <label for="fullCarouselA1" class="fullCarousel__thumbnail"><img src="../images/carouselStockA.jpg"></label>
+                        <label for="fullCarouselA2" class="fullCarousel__thumbnail"><img src="../images/carouselStockB.jpg"></label>
+                        <label for="fullCarouselA3" class="fullCarousel__thumbnail"><img src="../images/carouselStockD.jpg"></label>
+                        <label for="fullCarouselA4" class="fullCarousel__thumbnail"><img src="../images/carouselStockE.jpg">
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="componentContainer__markup">
-            
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 </body>
+
 </html>

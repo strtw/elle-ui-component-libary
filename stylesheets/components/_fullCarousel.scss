@@ -1,13 +1,94 @@
 .fullCarousel{
-	width: 800px;
-}
+	@include componentBoxLarge();
 
-.fullCarousel__viewer{
-	width: 100%;
-	padding: 20px;
+	align-content: center;
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	max-width: 1200px;
+	max-height: 600px;
+	position: relative;
+	width: 95%;
 }
 
 .fullCarousel__image{
+	float: right;
+	max-width: 100%; 
+	object-fit: cover;
+	transform-origin: bottom;
+	transform: scale(0,0);
+	transition: transform $transitionSlow ease-in;
+	width: 0;
+	z-index: -1;
+}
+
+.fullCarousel__switch{
+	display: none;
+}
+
+.fullCarousel__thumbnails{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 	width: 100%;
-	height: auto;
+}
+
+.fullCarousel__thumbnail{
+
+	cursor: pointer;
+	display: block;
+	margin: 10px 10px;
+	width: calc( 100% / 4);
+
+	&:hover{
+		transform: scale(1.2,1.2)
+	}
+
+	@media only screen and (min-width: 860px){
+		width: calc( 100% / 10);
+	}
+}
+
+.fullCarousel__viewer{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	padding: 20px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+.fullCarousel__thumbnail > img {
+	filter: grayscale(100%);
+	object-fit: cover;
+	width: 100%;
+
+	&:hover{
+		filter: grayscale(0);	
+	}
+}
+
+
+@for $i from 1 through 8{
+	.fullCarousel__switch:nth-of-type(#{$i}):checked ~ .fullCarousel__viewer > .fullCarousel__image:nth-of-type(#{$i})  {
+		float: left;
+		height: auto;
+		opacity: 1;
+		transform: scale(1,1);
+		width: 100%;
+		z-index: 1;
+	} 
+
+	.fullCarousel__switch:nth-of-type(#{$i}):checked ~ .fullCarousel__thumbnails > .fullCarousel__thumbnail:nth-of-type(#{$i})  {
+		transform: scale(1.1,1.1);
+	} 
+
+	.fullCarousel__switch:nth-of-type(#{$i}):checked ~ .fullCarousel__thumbnails > .fullCarousel__thumbnail:nth-of-type(#{$i}) > img  {
+		filter: grayscale(0);
+	} 
 }
