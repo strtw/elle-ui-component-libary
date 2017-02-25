@@ -22,7 +22,7 @@
 }
 
 .contactCard__name{
-  color:$baseColorDark;
+  color:$baseColorMed;
   margin: -20px 0 20px 0;
   text-align: center;
 }
@@ -32,3 +32,22 @@
   @include fontContent;
   text-align: center;
 }
+
+.contactCard__mailIcon::before{
+  content: "\f003";
+  font-family: "FontAwesome";
+}
+
+.contactCard__gitHubIcon::before{
+  content: "\f09b";
+  font-family: "FontAwesome";
+}
+
+.contactCard__twitterIcon::before{
+  content: "\f099";
+  font-family: "FontAwesome";
+}
+
+
+
+//todo Remove font includes once fonts are implemented globally.

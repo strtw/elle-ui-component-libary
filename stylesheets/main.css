@@ -38,7 +38,12 @@
     background-color: #EF4381; }
 
 .colorSwatch__container {
-  margin: 5px; }
+  margin: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 15%; }
 
 .colorSwatch__colorBlock {
   border: 1px solid black;
@@ -46,7 +51,8 @@
   width: 100px; }
 
 .colorSwatch__colorName {
-  text-align: center; }
+  text-align: center;
+  margin-top: 5px; }
 
 .colorSwatch__colorBlock--baseColorDark {
   background-color: #C31F5D; }
@@ -60,8 +66,21 @@
 .colorSwatch__colorBlock--baseColorAlt {
   background-color: #CF477C; }
 
-.componentContainer__display--flex {
-  display: flex; }
+.colorSwatch__colorBlock--defaultColor {
+  background-color: #202020; }
+
+.colorSwatch__colorBlock--defaultColorLight {
+  background-color: #535353; }
+
+.colorSwatch__colorBlock--invertDefaultColor {
+  background-color: #FFFFFF; }
+
+.colorSwatch__colorBlock--altColor {
+  background-color: #BDBDBD; }
+
+.componentContainer__display {
+  display: flex;
+  align-items: flex-start; }
 
 .contactCard__profileImage {
   position: relative;
@@ -77,7 +96,7 @@
   position: relative; }
 
 .contactCard__name {
-  color: #C31F5D;
+  color: #EA1B64;
   margin: -20px 0 20px 0;
   text-align: center; }
 
@@ -86,6 +105,18 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-align: center; }
+
+.contactCard__mailIcon::before {
+  content: "\f003";
+  font-family: "FontAwesome"; }
+
+.contactCard__gitHubIcon::before {
+  content: "\f09b";
+  font-family: "FontAwesome"; }
+
+.contactCard__twitterIcon::before {
+  content: "\f099";
+  font-family: "FontAwesome"; }
 
 .teaserCard__categoryHeader {
   color: #FFFFFF;
@@ -118,5 +149,16 @@
   left: 20px;
   position: relative;
   width: 84%; }
+
+.fullCarousel {
+  width: 800px; }
+
+.fullCarousel__viewer {
+  width: 100%;
+  padding: 20px; }
+
+.fullCarousel__image {
+  width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=main.css.map */
