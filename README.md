@@ -23,9 +23,12 @@ https://github.com/HugoGiraudel/sass-boilerplate
 
 
 ### Brian
-- Carousels (16,17,18)
+- Main Site
+- Carousel(s)
 - Progress Bar 
-- Tables?
+- Search Bar
+- Header/Footer
+- Typography/Swatches 
 - Experimental?
 
 ### PJ
@@ -41,14 +44,17 @@ https://github.com/HugoGiraudel/sass-boilerplate
 ### Stu
 - Buttons (1)
 - Cards (2,3,4)
-- 
 
 ### Other Ideas
 - Tables
-- Header/Footer
 - Lists
 - Jumbotron
 - Social Media Buttons
+- Modal
+- Code
+- Article 
+- Index
+- NavBar
 
 ### For more ideas see:
 - [Bootstrap Components](http://getbootstrap.com/components/)
