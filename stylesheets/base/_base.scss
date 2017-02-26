@@ -6,6 +6,12 @@
 
 body{
 	@include fontContent();
+	width: 95%;
+	margin: 0 auto;
+}
+
+main{
+	@include componentBoxLarge();
 }
 
 h1,h2,h3,h4,h5,h6{

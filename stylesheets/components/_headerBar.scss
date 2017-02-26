@@ -1,0 +1,36 @@
+.headerBar{
+	@include componentBoxLarge();
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid $baseColorMed;
+}
+
+.headerBar__logo > img{
+	width: 100px;
+}
+
+.headerBar__titleContainer{
+	display:flex;
+	flex-direction: column;
+	align-content: flex-start;
+	@include fontHeaderDefault();
+}
+.headerBar__title{
+	color: $baseColorLight;
+	font-size: 3rem;
+}
+
+.headerBar__subtitle{
+	font-size: 1rem;
+	margin: 0.5rem 0.25rem;
+}
+
+.headerBar__searchBoxContainer{
+
+}
+
+.headerBar__navBarContainer{
+
+}
+
