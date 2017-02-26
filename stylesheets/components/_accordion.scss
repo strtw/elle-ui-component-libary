@@ -9,7 +9,7 @@
 }
 
 .accordion {
-
+  @include componentBoxLarge();
   width: 475px;
   list-style-type: none;
 }
