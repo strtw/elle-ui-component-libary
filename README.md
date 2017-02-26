@@ -32,8 +32,9 @@ https://github.com/HugoGiraudel/sass-boilerplate
 - Accordion (5,6,7)
 
 ### Rafael 
-- Form (15a)
-- Checkbox/Radio (15b)
+- Form - Sign Up (13a)
+- Checkbox/Radio (13b)
+- Form - Contact (14)
 
 ### Ruben
 
