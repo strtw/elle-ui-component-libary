@@ -2,6 +2,7 @@
 	@include componentBoxLarge();
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	border-bottom: 3px solid $baseColorMed;
 }
@@ -14,6 +15,11 @@
 	
 }
 
+.headerBar__titleLogoContainer{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+}
 .headerBar__titleContainer{
 	display:flex;
 	flex-direction: column;

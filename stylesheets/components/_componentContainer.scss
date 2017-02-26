@@ -3,3 +3,9 @@
 	align-items: flex-start;
 	flex-flow: row wrap;
 }
+
+.componentContainer__display--col{
+	display: flex;
+	align-items: flex-start;
+	flex-flow: column wrap;
+}
