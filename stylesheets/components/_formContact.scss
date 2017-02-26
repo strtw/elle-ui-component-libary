@@ -1,0 +1,91 @@
+/*************** FORM - CONTACT ***************/
+
+.formContact {
+  max-width: 635px;
+  background-color: $baseColorMed;
+  padding: 1.5em;
+  border-radius: 4px;
+}
+
+.formContact__heading {
+  color: white;
+}
+
+.formContact__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1em 0;
+}
+
+.formContact__fieldContainer--twoColumn {
+  width: 47.5%;
+}
+
+.formContact__fieldContainer--oneColumn {
+  width: 100%;
+}
+
+.formContact__fieldHeading {
+  color: white;
+  font-size: 1em;
+}
+
+.formContact__fieldHeading:before {
+  font-family: "FontAwesome";
+  color: white;
+  margin: 0 .75em 0 0;
+}
+
+.formContact__fieldHeading--name:before {
+  content: "\f007";
+  font-size: 1.1em;
+}
+
+.formContact__fieldHeading--email:before {
+  content: "\f0e0";
+  font-size: 1.1em;
+}
+
+.formContact__fieldHeading--message {
+  margin-top: .25em;
+}
+
+.formContact__fieldHeading--message:before {
+  content: "\f040";
+  font-size: 1.1em;
+}
+
+.formContact__field {
+  width: 100%;
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 2px;
+  padding: 1em;
+}
+
+.formContact__button--submit {
+  width: 100%;
+  margin: 1em 0 1.5em 0;
+  color: white;
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.formContact__button--send {
+  color: white;
+}
+
+.formContact__button--send:before {
+  font-family: "FontAwesome";
+  content: "\f1d8";
+  margin: 0 .25em 0 0;
+}
+
+@media screen and (max-width: 415px) {
+  .formContact__fieldContainer--twoColumn {
+    width: 100%;
+  }
+  .formContact__row {
+    display: block;
+  }
+}
