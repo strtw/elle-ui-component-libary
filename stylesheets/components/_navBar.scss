@@ -1,0 +1,24 @@
+.navBar__navList{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.navBar__navItem{
+
+}
+
+.navBar__navLink{
+	text-decoration: underline;
+	width: 100%;
+	height: 100%;
+	color: $baseColorLight;
+	padding: 5px;
+	border-radius: $borderRoundedSoft;
+	margin: 5px;
+	&:hover{
+		background-color: $baseColorLight;
+		color:$invertDefaultColor;
+	}
+}
