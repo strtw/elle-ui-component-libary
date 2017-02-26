@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="../stylesheets/normalize.css">
+  <link rel="stylesheet" href="../stylesheets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--  <link rel="stylesheet" href="form/_formContact.css">-->
+</head>
+
+<body>
+
+  <form class="formContact">
+    <h1 class="formContact__heading">Contact Us</h1>
+    <div class="formContact__row">
+      <div class="formContact__fieldContainer formContact__fieldContainer--twoColumn  formContact__container--name">
+        <h2 class="formContact__fieldHeading  formContact__fieldHeading--name">Name</h2>
+        <input class="formContact__field" type="text">
+      </div>
+      <div class="formContact__fieldContainer formContact__fieldContainer--twoColumn  formContact__container--email">
+        <h2 class="formContact__fieldHeading formContact__fieldHeading--email">Email</h2>
+        <input class="formContact__field" type="text">
+      </div>
+    </div>
+    <div class="formContact__row">
+      <div class="formContact__fieldContainer formContact__fieldContainer--oneColumn  formContact__container--name">
+        <h2 class="formContact__fieldHeading  formContact__fieldHeading--message">Message</h2>
+        <textarea class="formContact__field formContact__field--message" rows="10"></textarea>
+      </div>
+    </div>
+    <button class="button--primary formContact__button--submit"><span class="formContact__button--send">Submit</span></button>
+  </form>
+
+</body>
+
+</html>
