@@ -1,0 +1,42 @@
+.zoomupDef{
+  background-color: $invertDefaultColor;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  transition: transform $transitionMed ease-in;
+  vertical-align: center;
+}
+
+.zoomupDef__content{
+  background-color:  $invertDefaultColor;
+  text-decoration: underline;
+}
+.zoomupDef__def{
+  background-color: $invertDefaultColor;
+  border-radius: $borderRoundedSoft;
+  border: 1px solid $baseColorLight;
+  display: none;
+  padding: 5px;
+  position: relative;
+  top: 2em;
+  width: 20em;
+}
+
+.zoomupDef:hover > .zoomupDef__def{
+  background-color:  $invertDefaultColor;
+  display: inline;
+  position: absolute;
+  z-index: 5;
+}
+
+.zoomupDef:hover > .zoomupDef__content{
+  text-decoration: none;
+}
+.zoomupDef:hover{
+  border-radius: $borderRoundedSoft;
+  border: 1px solid $baseColorMed;
+  transform: scale(3,3) translate3d(-20px, 5px, 30px);
+  z-index: 5;
+}
+
+
