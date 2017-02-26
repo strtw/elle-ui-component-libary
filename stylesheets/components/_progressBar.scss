@@ -1,0 +1,31 @@
+.progressBar{
+  /* Reset the default appearance */
+  @include componentBoxSmall();
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  display: block;
+   border: none;
+  height: 1.9rem;
+  width: 300px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: $invertDefaultColor;
+  border-radius: $borderRoundedSoft;
+  border: 1.5px solid $baseColorLight;
+}
+
+.progressBar::-webkit-progress-value{
+	background-color: white;
+    background-image: -webkit-linear-gradient(left, #FFF, $baseColorLight);
+}
+
+progress[value]::-moz-progress-bar { 
+  background-image: -moz-linear-gradient(left, #FFF, $baseColorLight);;
+  border-radius: $borderRoundedSoft;
+  border: 1px solid $baseColorDark;
+ 
+}
