@@ -3,3 +3,17 @@
 	align-items: flex-start;
 	flex-flow: row wrap;
 }
+
+.componentContainer__display--col{
+	display: flex;
+	align-items: flex-start;
+
+	flex-flow: column wrap;
+}
+
+// .componentContainer__markup{
+// 	@include componentBoxMed();
+// 	font-size: 1.1rem;
+// 	background-color:$altColor;
+// 	overflow-x: scroll;
+// }

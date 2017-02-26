@@ -1,0 +1,32 @@
+.actionCard{
+  @extend %card;
+}
+
+.actionCard__header{
+  position:relative;
+  background-color:$baseColorMed;
+  height:70px;
+}
+
+.actionCard__content{
+  @extend %card__content;
+  text-align:center;
+}
+
+.actionCard__btnContainer{
+  display:flex;
+  justify-content:space-around;
+}
+
+.actionCard__title{
+  text-align:center;
+  font-weight:$weightBold;
+}
+
+.actionCard__header > i{
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color:$invertDefaultColor;
+  opacity:.5;
+}

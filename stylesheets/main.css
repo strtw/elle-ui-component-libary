@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   transition: 0.2s background-color; }
 
-.contactCard, .teaserCard {
+.actionCard, .contactCard, .teaserCard {
   border: 1px solid #BDBDBD;
   border-radius: 3px;
   margin: 40px;
@@ -38,6 +38,14 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
   max-width: 100%; }
 
+.actionCard__content, .teaserCard__content {
+  color: #6D6D6D;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 10px;
+  padding: 5px;
+  line-height: 1.4em; }
+
 .right {
   float: right; }
 
@@ -47,6 +55,29 @@ h1, h2, h3, h4, h5, h6 {
 .center {
   margin-left: auto;
   margin-right: auto; }
+
+.actionCard__header {
+  position: relative;
+  background-color: #EA1B64;
+  height: 70px; }
+
+.actionCard__content {
+  text-align: center; }
+
+.actionCard__btnContainer {
+  display: flex;
+  justify-content: space-around; }
+
+.actionCard__title {
+  text-align: center;
+  font-weight: 700; }
+
+.actionCard__header > i {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: #FFFFFF;
+  opacity: .5; }
 
 .button--primary, .button--primary--round {
   background-color: #FFFFFF;
@@ -232,14 +263,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px;
   position: relative;
   top: -5px; }
-
-.teaserCard__content {
-  color: #6D6D6D;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  left: 20px;
-  position: relative;
-  width: 84%; }
 
 .fullCarousel {
   margin: 20px;

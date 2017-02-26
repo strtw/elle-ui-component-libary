@@ -35,11 +35,7 @@
 }
 
 .teaserCard__content{
-  color:$defaultColorLight;
-  @include fontContent;
-  left: 20px;
-  position: relative;
-  width: 84%;
+ @extend %card__content;
 }
 
 //todo add Box Model mixins
