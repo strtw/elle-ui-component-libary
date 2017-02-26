@@ -1,0 +1,57 @@
+.footerBar{
+	@include componentBoxLarge();
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 3px solid $baseColorMed;
+	font-size: 0.7rem;
+	@media only screen and (min-width: 600px){
+		font-size: 1rem;
+	}
+}
+
+.footerBar_section{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.footerBar__header{
+	text-align: center;
+	color: $baseColorLight;
+	font-size: 1.2rem;
+
+}
+.footerBar__authors{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	margin: 10px;
+
+}
+.footerBar__authorContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 4px;
+	@media only screen and (min-width: 600px){
+		margin: 0 8px;
+	}
+}
+
+.footerBar__authorImage{
+	  position: relative;
+  	  border-radius: 50%;
+      width: 40px;
+      display: block;
+      margin: 0 auto;
+      @media only screen and (min-width: 600px){
+		width: 70px;
+	}
+}
+
+.footerBar__authorName{
+	margin: 0.2rem;
+}
