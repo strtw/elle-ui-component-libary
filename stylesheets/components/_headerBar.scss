@@ -3,7 +3,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	border-bottom: 3px solid $baseColorMed;
 }
 
@@ -49,7 +49,7 @@
 
 }
 
-.headerBar__navBarContainer{
+.headerBar__navContainer{
 
 }
 
