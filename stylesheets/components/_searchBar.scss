@@ -1,0 +1,50 @@
+.searchBar{
+	@include componentBoxSmall();
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchBar__searchInput{
+	@include fontContent();
+	font-size: 1.2rem;
+	height: 2.2rem;
+	border-radius: 0;
+	padding: 0.4rem;
+	margin: 0;
+	border: none;
+	border-bottom: 2px solid $baseColorLight;
+
+	cursor: pointer;
+}
+
+.searchBar__searchInput:focus { 
+    outline: none !important;
+    border-bottom: 2px dashed $baseColorLight;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.searchBar__searchButton { 
+   	@extend %button;
+  	border:$borderDefault $baseColorMed;
+  	background-color: $baseColorMed;
+  	color:$invertDefaultColor;
+  	height: 2.2rem;
+  	margin: 0;
+  	border-radius: 0 $borderRoundedSoft $borderRoundedSoft 0;
+  	display: flex;
+  	align-items: center;
+  	&:hover{
+    	background-color: $baseColorLight;
+  	}
+ 	&:active{
+    	background-color: $baseColorDark;
+  	}
+}
+
+.searchBar__searchButton > i{
+	margin-right: 0.3rem;
+	color: $invertDefaultColor;
+}
