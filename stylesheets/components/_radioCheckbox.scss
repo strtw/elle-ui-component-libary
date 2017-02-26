@@ -1,0 +1,131 @@
+@import "../stylesheets/abstracts/_all.scss";
+@import "../stylesheets/base/_all.scss";
+@import "../stylesheets/components/_all.scss";
+@import "../stylesheets/layout/_all.scss";
+
+/*************** RADIO BUTTONS & CHECKBOXES ***************/
+
+/****  DEFAULT INPUT STYLES  ****/
+
+.radioButtons__input,
+.checkBoxes__input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  position: relative;
+  visibility: hidden;
+}
+
+.radioButtons__label,
+.checkBoxes__label {
+  color: $baseColorMed;
+  display: inline-block;
+  line-height: normal;
+  position: relative;
+}
+
+
+/****  RADIO BUTTONS  ****/
+
+.radioButtons__label:before {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  color: $baseColorMed;
+  content: "\f1db";
+  font-family: "FontAwesome";
+  font-size: 1.5em;
+  padding: 1px 2px;
+}
+
+.radioButtons__input:checked + .radioButtons__label:before {
+  border: 1px solid $baseColorMed;
+  color: $baseColorMed;
+  content: "\f111";
+}
+
+
+/****  CHECKBOXES  ****/
+
+.checkBoxes__label:before {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  color: $baseColorMed;
+  content: "\f096";
+  font-family: "FontAwesome";
+  font-size: 1.5em;
+  margin: 0 .25em 0 0;
+  position: relative;
+}
+
+
+/*  checkbox 1  */
+
+.checkBoxes__input:checked + .checkBoxes__label--check:after {
+  color: black;
+  content: "\f00c";
+  font-family: "FontAwesome";
+  font-size: 1.25em;
+  left: .09em;
+  position: absolute;
+}
+
+
+/*  checkbox 2 */
+
+.checkBoxes__input:checked + .checkBoxes__label--x:after {
+  color: black;
+  content: "\f00d";
+  font-family: "FontAwesome";
+  font-size: 1.25em;
+  left: .09em;
+  position: absolute;
+  top: .05em;
+}
+
+
+/*  checkbox 3  */
+
+.checkBoxes__input--checkInvert + .checkBoxes__label:before {
+  color: black;
+  position: relative;
+}
+
+.checkBoxes__input--checkInvert:checked + .checkBoxes__label--checkInvert:after {
+  color: $baseColorMed;
+  content: "\f00c";
+  font-family: "FontAwesome";
+  font-size: 1.25em;
+  left: .09em;
+  position: absolute;
+  top: .03em;
+}
+
+
+/*  checkbox 4 */
+
+.checkBoxes__input:checked + .checkBoxes__label--xInvert:before {
+  color: $baseColorMed;
+  content: "\f0c8";
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 1.38em;
+  line-height: 1.19;
+  transform: translateY(-1px);
+}
+
+.checkBoxes__input:checked + .checkBoxes__label--xInvert:after {
+  color: white;
+  content: "\f00d";
+  font-family: "FontAwesome";
+  font-size: 1.25em;
+  left: .09em;
+  margin-right: 5px;
+  position: absolute;
+  top: .04em;
+}
