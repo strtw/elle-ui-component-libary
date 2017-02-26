@@ -5,7 +5,13 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  width: 95%;
+  margin: 0 auto; }
+
+main {
+  margin: 20px;
+  padding: 10px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", serif;
@@ -504,5 +510,98 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 5px;
   position: absolute;
   top: .04em; }
+
+.headerBar {
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #EA1B64; }
+
+.headerBar__logo > img {
+  width: 70px; }
+  @media only screen and (min-width: 600px) {
+    .headerBar__logo > img {
+      width: 100px; } }
+
+.headerBar__titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  font-family: "Roboto", serif;
+  font-weight: 400; }
+
+.headerBar__title {
+  color: #EF4381;
+  font-size: 1.6rem; }
+  @media only screen and (min-width: 600px) {
+    .headerBar__title {
+      font-size: 3rem; } }
+
+.headerBar__subtitle {
+  font-size: 0.85rem;
+  margin: 0.2rem 0.1rem; }
+  @media only screen and (min-width: 600px) {
+    .headerBar__subtitle {
+      font-size: 1rem;
+      margin: 0.5rem 0.25rem; } }
+
+/*************** FORM - JOIN US ***************/
+.formJoinUs {
+  padding: 2em 2.75em;
+  border: 2px solid #EA1B64;
+  max-width: 380px;
+  border-radius: 4px; }
+
+.formJoinUs__heading {
+  color: #EA1B64;
+  margin: 0 0 1.5em 0; }
+
+.formJoinUs__container {
+  border: 2px solid #EA1B64;
+  margin: 0 0 1.25em 0;
+  border-radius: 4px;
+  padding: 0; }
+
+.formJoinUs__container:before {
+  font-family: "FontAwesome";
+  color: white;
+  background-color: #EA1B64;
+  display: inline-block;
+  padding: .25em; }
+
+.formJoinUs__container--username:before {
+  content: "\f007";
+  font-size: 1.8em; }
+
+.formJoinUs__container--email:before {
+  content: "\f0e0";
+  font-size: 1.4em;
+  border: solid #EA1B64;
+  border-width: 6px 1px 6px 0; }
+
+.formJoinUs__container--password:before {
+  content: "\f023";
+  font-size: 1.9em; }
+
+.formJoinUs__field {
+  width: calc(100% - 2.2em);
+  border-color: transparent;
+  padding: .75em;
+  float: right; }
+
+.formJoinUs__submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: .75em 0;
+  color: #EA1B64;
+  font-weight: 600;
+  border: 2px solid #EA1B64;
+  margin: 2em 0 1em 0;
+  border-radius: 4px;
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */

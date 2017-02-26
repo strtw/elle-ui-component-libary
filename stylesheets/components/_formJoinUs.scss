@@ -1,0 +1,66 @@
+/*************** FORM - JOIN US ***************/
+
+.formJoinUs {
+  padding: 2em 2.75em;
+  border: 2px solid $baseColorMed;
+  max-width: 380px;
+  border-radius: 4px;
+}
+
+.formJoinUs__heading {
+  color: $baseColorMed;
+  margin: 0 0 1.5em 0;
+}
+
+.formJoinUs__container {
+  border: 2px solid $baseColorMed;
+  margin: 0 0 1.25em 0;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.formJoinUs__container:before {
+  font-family: "FontAwesome";
+  color: white;
+  background-color: $baseColorMed;
+  display: inline-block;
+  padding: .25em;
+}
+
+.formJoinUs__container--username:before {
+  content: "\f007";
+  font-size: 1.8em;
+}
+
+.formJoinUs__container--email:before {
+  content: "\f0e0";
+  font-size: 1.4em;
+  border: solid $baseColorMed;
+  border-width: 6px 1px 6px 0;
+}
+
+.formJoinUs__container--password:before {
+  content: "\f023";
+  font-size: 1.9em;
+}
+
+.formJoinUs__field {
+  width: calc(100% - 2.2em);
+  border-color: transparent;
+  padding: .75em;
+  float: right;
+}
+
+.formJoinUs__submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: .75em 0;
+  color: $baseColorMed;
+  font-weight: 600;
+  border: 2px solid $baseColorMed;
+  margin: 2em 0 1em 0;
+  border-radius: 4px;
+  background-color: transparent;
+}
