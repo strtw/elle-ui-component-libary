@@ -993,7 +993,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   border-radius: 3px;
   margin: 5px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  transition: 0.2s background-color ease-in; }
   .navBar__navLink:hover {
     background-color: #EF4381;
     color: #FFFFFF; }
@@ -1033,7 +1034,8 @@ progress[value]::-moz-progress-bar {
   appearance: none;
   outline: none;
   position: relative;
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 .radioButtons__label,
 .checkBoxes__label {
@@ -1053,7 +1055,7 @@ progress[value]::-moz-progress-bar {
   content: "\f1db";
   font-family: "FontAwesome";
   font-size: 1.5em;
-  padding: 1px 2px; }
+  padding: 1px 2px 0 0; }
 
 .radioButtons__input:checked + .radioButtons__label:before {
   border: 1px solid #EA1B64;
