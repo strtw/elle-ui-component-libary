@@ -487,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   height: 2.2rem;
   border-radius: 0;
-  padding: 0.4rem;
+  padding: 0.1rem 0.3rem;
   margin: 0;
   border: none;
   border-bottom: 2px solid #EF4381;
@@ -1055,7 +1055,7 @@ progress[value]::-moz-progress-bar {
   content: "\f1db";
   font-family: "FontAwesome";
   font-size: 1.5em;
-  padding: 1px 2px 0 0; }
+  padding: 1px 2px; }
 
 .radioButtons__input:checked + .radioButtons__label:before {
   border: 1px solid #EA1B64;
@@ -1150,7 +1150,7 @@ progress[value]::-moz-progress-bar {
   font-size: 1.2rem;
   height: 2.2rem;
   border-radius: 0;
-  padding: 0.4rem;
+  padding: 0.1rem 0.3rem;
   margin: 0;
   border: none;
   border-bottom: 2px solid #EF4381;
