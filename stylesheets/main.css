@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   height: 2.2rem;
   border-radius: 0;
-  padding: 0.4rem;
+  padding: 0.1rem 0.3rem;
   margin: 0;
   border: none;
   border-bottom: 2px solid #EF4381;
@@ -1033,7 +1033,8 @@ progress[value]::-moz-progress-bar {
   appearance: none;
   outline: none;
   position: relative;
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 .radioButtons__label,
 .checkBoxes__label {
@@ -1148,7 +1149,7 @@ progress[value]::-moz-progress-bar {
   font-size: 1.2rem;
   height: 2.2rem;
   border-radius: 0;
-  padding: 0.4rem;
+  padding: 0.1rem 0.3rem;
   margin: 0;
   border: none;
   border-bottom: 2px solid #EF4381;
