@@ -146,6 +146,11 @@ h1, h2, h3, h4, h5, h6 {
   /*box-shadow: 0 3px 0 0 #BDBDBD;*/
   border-bottom: 3px solid #BDBDBD; }
 
+  .accordion__heading--white:hover {
+    transition: .4s ease;
+    border-bottom: 3px solid #EA1F68;
+  }
+
 .accordion__section:target .accordion__heading--white {
   border: none;
   /*box-shadow: 0 3px 0 0 #EA2068;*/
@@ -181,6 +186,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1px;
   padding: 16px; }
 
+.accordion__heading--black:hover {
+  transition: .5s ease;
+  color: #EA1B64; }
+
 .accordion__section:target .accordion__heading--black {
   border-bottom: 5px solid #EA1B64;
   margin-bottom: 0; }
@@ -194,14 +203,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 26px; }
 
+.accordion__heading--black:hover .accordion__circle--black {
+  background-color: #EA1B64;
+  transition: .75s ease; }
+
 .accordion__symbol--black {
   position: relative;
   top: -1px;
-  right: -4px;
+  right: -5px;
   color: #EA1B64;
   display: inline-block;
   font-weight: bold;
   transform: rotate(-45deg); }
+
+.accordion__heading--black:hover .accordion__symbol--black {
+  transition: .75s ease;
+  color: #FFF;
+}
 
 .accordion__section:target .accordion__symbol--black {
   color: #FFF; }
