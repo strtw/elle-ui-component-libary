@@ -1,10 +1,19 @@
-.searchBar{
-	@include componentBoxSmall();
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	position:relative;
+.searchBar {
+  @include componentBoxSmall();
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.searchBar--withSearchIndication{
+  height: 150px;
+  margin: 20px inherit;
+}
+
+.searchBar__searchingToggle{
+  display:none;
 }
 
 .searchBar__searchInput{
@@ -16,7 +25,6 @@
 	margin: 0;
 	border: none;
 	border-bottom: 2px solid $baseColorLight;
-
 	cursor: pointer;
 }
 
@@ -48,4 +56,99 @@
 .searchBar__searchButton > i{
 	margin-right: 0.3rem;
 	color: $invertDefaultColor;
+}
+
+.searchBar__searchingBars{
+  position: absolute;
+  height: 100px;
+  width: 5px;
+  background-color: $baseColorLight;
+  top: 25px;
+  z-index: -5;
+}
+
+@for $i from 1 through 12{
+  .searchBar__searchingBars:nth-of-type(#{$i}){
+    left: #{20+ $i * 15}px;
+  }
+}
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(1), 
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(4),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(9), 
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(11) {
+  animation-name: bobbleA;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 0.9s; 
+}
+
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(2),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(5),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(7),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(10){
+  animation-name: bobbleB;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 1.2s; 
+}
+
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(3),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(6),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(8),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(12) {
+  animation-name: bobbleC;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 2s; 
+}
+
+@keyframes bobbleA {
+  0% {
+    top: 0px; 
+  }
+  25% {
+    top: -30px; 
+  }
+  50% {
+    top: 0px; 
+  } 
+  75% {
+    top: 30px; 
+  } 
+  100%{
+    top: 0px; 
+  }
+
+}
+
+
+@keyframes bobbleB {
+  0% {
+    top: 0px; 
+  }
+  40%{
+    top:-20px;
+  }
+  70% {
+    top: 20px; 
+  } 
+  100%{
+    top: 0px; 
+  }
+
+}
+
+@keyframes bobbleC {
+  0% {
+    top: 0px; 
+  }
+  40%{
+    top:-10px;
+  }
+  70% {
+    top: 20px; 
+  } 
+  100%{
+    top: 0px; 
+  }
 }
