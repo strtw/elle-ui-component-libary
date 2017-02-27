@@ -190,6 +190,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   flex-flow: row wrap; }
 
+.componentContainer__display--col {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column wrap; }
+
 .contactCard__profileImage {
   position: relative;
   border-radius: 50%;
@@ -539,6 +544,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid #EA1B64; }
 
@@ -547,6 +553,11 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (min-width: 600px) {
     .headerBar__logo > img {
       width: 100px; } }
+
+.headerBar__titleLogoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 .headerBar__titleContainer {
   display: flex;
@@ -629,7 +640,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .searchBar__searchInput {
   font-family: "Open Sans", sans-serif;
@@ -666,6 +678,28 @@ h1, h2, h3, h4, h5, h6 {
 .searchBar__searchButton > i {
   margin-right: 0.3rem;
   color: #FFFFFF; }
+
+.searchBar__searchEditor {
+  background-color: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  left: 15px;
+  padding: 10px;
+  position: absolute;
+  top: 43px;
+  display: none;
+  max-width: 400px; }
+
+.searchBar__searchEditorControl {
+  display: none; }
+  .searchBar__searchEditorControl:checked + .searchBar__searchEditor {
+    display: block; }
+
+.searchBar__expand {
+  opacity: 0;
+  color: #EF4381;
+  margin-right: 3px;
+  padding: 0; }
 
 /*************** FORM - JOIN US ***************/
 .formJoinUs {
@@ -723,5 +757,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 1em 0;
   border-radius: 4px;
   background-color: transparent; }
+
+.progressBar {
+  /* Reset the default appearance */
+  margin: 5px;
+  padding: 2.5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  border: none;
+  height: 1.9rem;
+  width: 300px; }
+
+progress[value]::-webkit-progress-bar {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1.5px solid #EF4381; }
+
+.progressBar::-webkit-progress-value {
+  background-color: white;
+  background-image: -webkit-linear-gradient(left, #FFF, #EF4381); }
+
+progress[value]::-moz-progress-bar {
+  background-image: -moz-linear-gradient(left, #FFF, #EF4381);
+  border-radius: 3px;
+  border: 1px solid #C31F5D; }
 
 /*# sourceMappingURL=main.css.map */
