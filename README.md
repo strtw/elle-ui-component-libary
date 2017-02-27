@@ -73,3 +73,8 @@ https://github.com/HugoGiraudel/sass-boilerplate
 ## To Do 
 - Determine breakpoints
 - Add variables for padding/margin
+
+##Final Tasks
+
+- Stu read and complete tasks here:
+https://qa.moderndeveloper.com/t/product-managers-of-the-hackathon-teams/2525

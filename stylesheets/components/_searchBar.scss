@@ -1,9 +1,9 @@
-.searchBar{
-	@include componentBoxSmall();
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+.searchBar {
+  @include componentBoxSmall();
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -25,7 +25,6 @@
 	margin: 0;
 	border: none;
 	border-bottom: 2px solid $baseColorLight;
-
 	cursor: pointer;
 }
 

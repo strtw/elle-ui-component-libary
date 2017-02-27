@@ -465,6 +465,180 @@ h1, h2, h3, h4, h5, h6 {
 .footerBar__authorName {
   margin: 0.2rem; }
 
+.searchBar {
+  margin: 5px;
+  padding: 2.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.searchBar--withSearchIndication {
+  height: 150px;
+  margin: 20px inherit; }
+
+.searchBar__searchingToggle {
+  display: none; }
+
+.searchBar__searchInput {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  height: 2.2rem;
+  border-radius: 0;
+  padding: 0.4rem;
+  margin: 0;
+  border: none;
+  border-bottom: 2px solid #EF4381;
+  cursor: pointer; }
+
+.searchBar__searchInput:focus {
+  outline: none !important;
+  border-bottom: 2px dashed #EF4381;
+  border-radius: 0;
+  box-shadow: none; }
+
+.searchBar__searchButton {
+  border: 2px solid #EA1B64;
+  background-color: #EA1B64;
+  color: #FFFFFF;
+  height: 2.2rem;
+  margin: 0;
+  border-radius: 0 3px 3px 0;
+  display: flex;
+  align-items: center; }
+  .searchBar__searchButton:hover {
+    background-color: #EF4381; }
+  .searchBar__searchButton:active {
+    background-color: #C31F5D; }
+
+.searchBar__searchButton > i {
+  margin-right: 0.3rem;
+  color: #FFFFFF; }
+
+.searchBar__searchingBars {
+  position: absolute;
+  height: 100px;
+  width: 5px;
+  background-color: #EF4381;
+  top: 25px;
+  z-index: -5; }
+
+.searchBar__searchingBars:nth-of-type(1) {
+  left: 35px; }
+
+.searchBar__searchingBars:nth-of-type(2) {
+  left: 50px; }
+
+.searchBar__searchingBars:nth-of-type(3) {
+  left: 65px; }
+
+.searchBar__searchingBars:nth-of-type(4) {
+  left: 80px; }
+
+.searchBar__searchingBars:nth-of-type(5) {
+  left: 95px; }
+
+.searchBar__searchingBars:nth-of-type(6) {
+  left: 110px; }
+
+.searchBar__searchingBars:nth-of-type(7) {
+  left: 125px; }
+
+.searchBar__searchingBars:nth-of-type(8) {
+  left: 140px; }
+
+.searchBar__searchingBars:nth-of-type(9) {
+  left: 155px; }
+
+.searchBar__searchingBars:nth-of-type(10) {
+  left: 170px; }
+
+.searchBar__searchingBars:nth-of-type(11) {
+  left: 185px; }
+
+.searchBar__searchingBars:nth-of-type(12) {
+  left: 200px; }
+
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(1),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(4),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(9),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(11) {
+  animation-name: bobbleA;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 0.9s; }
+
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(2),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(5),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(7),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(10) {
+  animation-name: bobbleB;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 1.2s; }
+
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(3),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(6),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(8),
+.searchBar__searchingToggle:checked ~ .searchBar__searchingBars:nth-of-type(12) {
+  animation-name: bobbleC;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 2s; }
+
+@keyframes bobbleA {
+  0% {
+    top: 0px; }
+  25% {
+    top: -30px; }
+  50% {
+    top: 0px; }
+  75% {
+    top: 30px; }
+  100% {
+    top: 0px; } }
+@keyframes bobbleB {
+  0% {
+    top: 0px; }
+  40% {
+    top: -20px; }
+  70% {
+    top: 20px; }
+  100% {
+    top: 0px; } }
+@keyframes bobbleC {
+  0% {
+    top: 0px; }
+  40% {
+    top: -10px; }
+  70% {
+    top: 20px; }
+  100% {
+    top: 0px; } }
+.searchBar__searchEditor {
+  background-color: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  left: 15px;
+  padding: 10px;
+  position: absolute;
+  top: 43px;
+  display: none;
+  max-width: 400px; }
+
+.searchBar__searchEditorControl {
+  display: none; }
+  .searchBar__searchEditorControl:checked + .searchBar__searchEditor {
+    display: block; }
+
+.searchBar__expand {
+  opacity: 0;
+  color: #EF4381;
+  margin-right: 3px;
+  padding: 0; }
+
 /*************** FORM - CONTACT ***************/
 .formContact {
   max-width: 635px;

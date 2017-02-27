@@ -1,0 +1,27 @@
+.searchBar__searchEditor{
+  //width:227px;
+  background-color:$invertDefaultColor;
+  border:1px solid $altColor;
+  border-radius: $borderRoundedSoft;
+  left:15px;
+  padding:10px;
+  position:absolute;
+  top:43px;
+  display:none;
+  max-width:400px;
+}
+
+.searchBar__searchEditorControl{
+  display:none;
+  &:checked + .searchBar__searchEditor{
+    display:block;
+  }
+}
+
+.searchBar__expand{
+  opacity:0;
+  color:$baseColorLight;
+  margin-right:3px;
+  padding:0;
+}
+
