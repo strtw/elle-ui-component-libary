@@ -1395,7 +1395,7 @@ progress[value]::-moz-progress-bar {
   border-radius: 30px; }
 
 .toggle__toggleInput:checked + .toggle__label--volume {
-  border: solid red;
+  border: solid #EA1B64;
   border-width: 5px 5px 5px 45px; }
 
 .toggle--volume {

@@ -64,7 +64,7 @@
     }
     
     .toggle__toggleInput:checked + .toggle__label--volume {
-      border: solid red;
+      border: solid $baseColorMed;
       border-width: 5px 5px 5px 45px;
     }
     
