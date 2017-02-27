@@ -16,22 +16,24 @@
 - [7-1 Project Style](https://github.com/HugoGiraudel/sass-boilerplate)
 
 ## Components Designed (20+)
-- Main Site [Brian]
+- Main Site [All]
 - Basic - Color Pallete [Brian]
 - Basic - Typography [Brian]
-- Input/Output - Checkbox/Radio [Rafael] 
-- Input/Output - Progress Bar [Rafael]
-- Input/Output - Toggle [Rafael]
-- Search - Basic Search Bar [Brian]
 - Buttons - Basic Buttons [Stu]
 - Buttons - Rounded Buttons [Stu]
 - Buttons - Button Groups [Stu]
+- Input/Output - Checkbox/Radio [Rafael] 
+- Input/Output - Progress Bar [Rafael]
+- Input/Output - Toggle [Rafael]
+- Input/Output - Basic Search Bar [Brian]
+- Form - Contact [Stu]
+- Form - Sign Up [Stu]
 - Card - Teaser [Stu]
 - Card - Contact [Stu]
 - Card - Call to Action [Stu]
-- Form - Contact [Stu]
-- Form - Sign Up [Stu]
-- Component - Accordions (3) [PJ]
+- Component - AccordionA [PJ]
+- Component - AccordionB [PJ]
+- Component - AccordionC [PJ]
 - Component - Carousel [Brian]
 - Navigation - NavBar [Brian]
 - Navigation - SideNav [Rafael]
@@ -62,4 +64,4 @@
 - [Materilaize Components](http://materializecss.com/badges.html)
 - [Material Design for Bootstrap Components](https://mdbootstrap.com/components/buttons/)
 - [Zurb Foundation Components](http://foundation.zurb.com/sites/docs/v/5.5.3/components/buttons.html)
-##Final Tasks
+
