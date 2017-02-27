@@ -21,7 +21,7 @@
     .toggle__toggleInput:checked + .toggle__label {
       position: absolute;
       transition: border-width .1s linear;
-      border: solid dodgerblue;
+      border: solid $baseColorMed;
       background-color: white;
       border-width: 5px 5px 5px 45px;
     }
@@ -36,7 +36,7 @@
     
     .toggle__toggleInput:checked + .toggle__label:before {
       content: "ON";
-      color: lightskyblue;
+      color: white;
       font-size: .8em;
       line-height: 2;
       margin: 0 0 0 -35px;
