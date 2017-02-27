@@ -46,6 +46,7 @@
 - Innovative - Search w/ Long Edit [Stu]
 
 ## To Do 
+- Finish Main Site Nav
 - Responsiveness
 - Grid
 
