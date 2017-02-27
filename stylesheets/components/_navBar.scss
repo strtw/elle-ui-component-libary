@@ -18,6 +18,7 @@
 	border-radius: $borderRoundedSoft;
 	margin: 5px;
 	font-size: 1.2em;
+	transition:$transitionFast background-color ease-in;
 	&:hover{
 		background-color: $baseColorLight;
 		color:$invertDefaultColor;
