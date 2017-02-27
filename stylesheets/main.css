@@ -105,7 +105,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .accordion__symbol {
   display: inline-block;
-  float: right;
   transform: rotate(-45deg);
   color: #BDBDBD; }
 
@@ -487,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   height: 2.2rem;
   border-radius: 0;
-  padding: 0.4rem;
+  padding: 0.1rem 0.3rem;
   margin: 0;
   border: none;
   border-bottom: 2px solid #EF4381;
@@ -993,7 +992,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   border-radius: 3px;
   margin: 5px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  transition: 0.2s background-color ease-in; }
   .navBar__navLink:hover {
     background-color: #EF4381;
     color: #FFFFFF; }
@@ -1033,7 +1033,8 @@ progress[value]::-moz-progress-bar {
   appearance: none;
   outline: none;
   position: relative;
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 .radioButtons__label,
 .checkBoxes__label {
@@ -1148,7 +1149,7 @@ progress[value]::-moz-progress-bar {
   font-size: 1.2rem;
   height: 2.2rem;
   border-radius: 0;
-  padding: 0.4rem;
+  padding: 0.1rem 0.3rem;
   margin: 0;
   border: none;
   border-bottom: 2px solid #EF4381;
@@ -1427,8 +1428,6 @@ progress[value]::-moz-progress-bar {
   right: 100%; }
 
 .sidenav__item {
-  margin: 0;
-  padding: 0;
   list-style: none;
   width: 200px;
   height: 50px;
@@ -1539,8 +1538,6 @@ progress[value]::-moz-progress-bar {
   top: 23%;
   left: 72px;
   pointer-events: none;
-  font-weight: bold;
-  font-weight: bold;
   font-weight: bold; }
 
 .pinwheel:hover .pinwheel__spoke--a {
