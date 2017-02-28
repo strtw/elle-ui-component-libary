@@ -48,18 +48,17 @@
 
 ## To Do 
 ###Primary
-- 12-Column Grid
-- Lists: Show different styles of ordered and unordered lists
+- 12-Column Grid [Stu]
+- Lists: Show different styles of ordered and unordered lists [Rafael]
 - Tables
-- Buttons
-- Modals
+- Modals [STU]
 - Scrollspy
 - Tabs: Develop at least three types of tabs
-- Accordion: Make accordion opens and closes gracefully
+- Accordion: Make accordion opens and closes gracefully [PJ]
 - Carousels: Develop at least three types of Carousels.
-Pagination
+Pagination [Brian]
 
---Rafael, PJ, Ruben: Create innovative UI element. 
+--[Rafael], [PJ], [Ruben]: Create innovative UI element. 
 
 ###Secondary
 - Finish Main Site Nav
