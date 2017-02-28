@@ -452,7 +452,6 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0 8px; } }
 
 .footerBar__authorImage {
-  position: relative;
   border-radius: 50%;
   width: 40px;
   display: block;
@@ -1576,5 +1575,24 @@ progress[value]::-moz-progress-bar {
   visibility: visible;
   background-size: cover;
   background-image: url(https://qa.moderndeveloper.com/letter_avatar/pj_deleon/240/5_f49de8ba623c2fd8ed551ea21a23372b.png); }
+
+.modal__background {
+  background-color: #BDBDBD;
+  bottom: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none; }
+
+.modal__foreground {
+  position: absolute;
+  top: 100px;
+  left: 36%; }
+
+.modal__control {
+  display: none; }
+  .modal__control:checked ~ .modal__background {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
