@@ -1576,21 +1576,6 @@ progress[value]::-moz-progress-bar {
   background-size: cover;
   background-image: url(https://qa.moderndeveloper.com/letter_avatar/pj_deleon/240/5_f49de8ba623c2fd8ed551ea21a23372b.png); }
 
-.markup-body {
-  position: relative;
-  overflow: auto;
-  white-space: pre;
-  word-wrap: normal;
-  word-break: normal;
-  tab-size: 4;
-  hyphens: none;
-  border: 1px solid #51d0ef;
-  border-radius: 0 0 4px 4px;
-  background-color: #f2f5fa;
-  margin: 0;
-  font-size: 14px;
-  padding: 24px; }
-
 .modal__background {
   background-color: rgba(189, 189, 189, 0.6);
   bottom: 0;
@@ -1623,5 +1608,48 @@ progress[value]::-moz-progress-bar {
   .modal__control:checked ~ .modal__background, .modal__control:checked ~ .modal__foreground {
     opacity: 1;
     visibility: visible; }
+
+.tabs {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+  padding: 0;
+  border-radius: 3px; }
+
+.tabs__tab {
+  position: relative;
+  top: -38px;
+  display: inline-block;
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  margin-left: 0px;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px; }
+
+.tabs__panel {
+  position: absolute;
+  top: 0;
+  border: 1px solid #BDBDBD;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  z-index: 0; }
+
+.tabs__panelControl {
+  display: none; }
+  .tabs__panelControl:checked + .tabs__panel {
+    z-index: 1; }
+  .tabs__panelControl:checked[class*="tab1"] ~ .tabs__tab[class*="tab1"] {
+    border-bottom: 3px solid #FFFFFF;
+    background-color: red; }
+  .tabs__panelControl:checked[class*="tab2"] ~ .tabs__tab[class*="tab2"] {
+    border-bottom: 3px solid #FFFFFF;
+    background-color: red; }
+  .tabs__panelControl:checked[class*="tab3"] ~ .tabs__tab[class*="tab3"] {
+    border-bottom: 3px solid #FFFFFF;
+    background-color: red; }
 
 /*# sourceMappingURL=main.css.map */

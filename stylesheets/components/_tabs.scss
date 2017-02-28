@@ -1,0 +1,53 @@
+.tabs{
+  position:relative;
+  width: 400px;
+  height:300px;
+  @include componentBoxLarge;
+  padding:0;
+  border-radius: $borderRoundedSoft;
+}
+
+.tabs__tab{
+  position:relative;
+  top:-38px;
+  display:inline-block;
+  width:100px;
+  @include componentBoxMed;
+  margin-left:0px;
+  border:1px solid $altColor;
+  border-radius: $borderRoundedSoft;
+}
+
+
+.tabs__panel{
+  position:absolute;
+  top:0;
+  border: 1px solid $altColor;
+  background-color: $invertDefaultColor;
+  width:100%;
+  height:100%;
+  z-index:0;
+
+}
+
+.tabs__panelControl {
+  display:none;
+  &:checked + .tabs__panel {
+    z-index:1;
+  }
+  &:checked[class*="tab1"] ~ .tabs__tab[class*="tab1"]{
+    border-bottom:3px solid $invertDefaultColor;
+    background-color:red;
+  }
+  &:checked[class*="tab2"] ~ .tabs__tab[class*="tab2"]{
+    border-bottom:3px solid $invertDefaultColor;
+    background-color:red;
+  }
+  &:checked[class*="tab3"] ~ .tabs__tab[class*="tab3"]{
+    border-bottom:3px solid $invertDefaultColor;
+    background-color:red;
+  }
+}
+
+
+

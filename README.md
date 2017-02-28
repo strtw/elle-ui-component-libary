@@ -49,9 +49,9 @@
 ## To Do 
 ###Primary
 - 12-Column Grid [Brian]
-- Lists: [Rafael]Show different styles of ordered and unordered lists [Rafael]
+- Lists: [Rafael]Show different styles of ordered and unordered lists
 - Tables [Rafael]
-- Modals [STU]
+- Modals [STU] (One done)
 - Scrollspy
 - Tabs: [STU] Develop at least three types of tabs
 - Accordion: Make accordion opens and closes gracefully [PJ]
