@@ -45,19 +45,32 @@
 - Innovative - Definition Zoom [Brian]
 - Innovative - Search w/ Long Edit [Stu]
 
+
 ## To Do 
+###Primary
+- 12-Column Grid
+- Lists: Show different styles of ordered and unordered lists
+- Tables
+- Buttons
+- Modals
+- Scrollspy
+- Tabs: Develop at least three types of tabs
+- Accordion: Make accordion opens and closes gracefully
+- Carousels: Develop at least three types of Carousels.
+Pagination
+
+--Rafael, PJ, Ruben: Create innovative UI element. 
+
+###Secondary
 - Finish Main Site Nav
 - Responsiveness
-- Grid
 
 --- 
 
 ### Other Ideas
-- Tables
 - Lists
 - Jumbotron
 - Social Media Buttons
-- Modal
 - Code
 - Article 
 - Index
