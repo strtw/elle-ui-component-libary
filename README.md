@@ -48,15 +48,15 @@
 
 ## To Do 
 ###Primary
-- 12-Column Grid [Stu]
-- Lists: Show different styles of ordered and unordered lists [Rafael]
-- Tables
+- 12-Column Grid [Brian]
+- Lists: [Rafael]Show different styles of ordered and unordered lists [Rafael]
+- Tables [Rafael]
 - Modals [STU]
 - Scrollspy
-- Tabs: Develop at least three types of tabs
+- Tabs: [STU] Develop at least three types of tabs
 - Accordion: Make accordion opens and closes gracefully [PJ]
-- Carousels: Develop at least three types of Carousels.
-Pagination [Brian]
+- Carousels:[Brian] Develop at least three types of Carousels.
+- Pagination 
 
 --[Rafael], [PJ], [Ruben]: Create innovative UI element. 
 
