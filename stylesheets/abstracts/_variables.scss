@@ -21,7 +21,7 @@ $defaultColor: #202020; // MAIN TEXT COLOR, PICKED FROM BLACK BUTTON IN BUTTON G
 $defaultColorLight:#6D6D6D;
 $invertDefaultColor:#FFFFFF;
 $altColor: #BDBDBD; // SUB TEXT COLOR, PICKED FROM GRAY 'DISABLED' BUTTON IN BUTTON GROUPS 
-
+$altColorTransparent:rgba( $altColor, .6 );
 //Transition Variables
 
 $transitionFast: .2s;

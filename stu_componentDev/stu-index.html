@@ -459,10 +459,13 @@
                 <div class="modal">
                     <input type="checkbox" id="modal__control"
                            class="modal__control">
-                    <label for="modal__control"><a class="button--primary">Modal
-                    </a></label>
-                    <div class="modal__background">
+                    <label for="modal__control"><a
+                            class="button--primary">Modal</a></label>
+                    <label class="modal__background" for="modal__control"></label>
                         <div class="modal__foreground">
+                            <label for="modal__control" class="modal__closeLabel"><i
+                                    class="fa fa-times"
+                                    aria-hidden="true"></i></label>
                             <form class="formContact">
                                 <h1 class="formContact__heading">Contact Us</h1>
                                 <div class="formContact__row">
@@ -485,8 +488,6 @@
                                 <button class="button--primary formContact__button--submit"><span class="formContact__button--send">Submit</span></button>
                             </form>
                         </div>
-                    </div>
-
                 </div>
 
 
