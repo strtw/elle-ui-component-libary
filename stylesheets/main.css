@@ -1652,4 +1652,80 @@ progress[value]::-moz-progress-bar {
     border-bottom: 3px solid #FFFFFF;
     background-color: red; }
 
+/********** LIST STYLES **********/
+.uiList {
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-radius: 3px;
+  margin: 1em;
+  padding: 0; }
+
+.uiList__item {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  margin: 0;
+  padding: .5em .5em .5em 1em;
+  list-style-position: inside;
+  opacity: .6;
+  cursor: pointer; }
+
+.uiList__item:hover {
+  opacity: 1; }
+
+.list--unOrdered {
+  list-style: none; }
+
+/* decorative styles  */
+.uiList__item--unOrdered:before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  font-size: .75em;
+  display: inline-block;
+  color: #C31F5D;
+  width: 1.5em; }
+
+.list--primary {
+  border-color: #C31F5D; }
+
+.uiList__item--primary {
+  border-color: #C31F5D; }
+
+/********** Table Styles **********/
+.uiTableContainer {
+  border: 2px solid #C31F5D;
+  display: inline-block;
+  border-radius: 3px; }
+
+.uiTable {
+  border-collapse: collapse; }
+
+.uiTable__row {
+  border-bottom: 2px solid #C31F5D; }
+
+.uiTable_footRow:last-child {
+  border-bottom: none; }
+
+.uiTable__cell {
+  padding: .75em; }
+
+/*    align all cell contents    */
+.uiTable--left {
+  text-align: left; }
+
+.uiTable--center {
+  text-align: center; }
+
+.uiTable--right {
+  text-align: right; }
+
+/*    align individual cell contents    */
+.uiTable__cell--left {
+  text-align: left; }
+
+.uiTable__cell--center {
+  text-align: center; }
+
+.uiTable__cell--right {
+  text-align: right; }
+
 /*# sourceMappingURL=main.css.map */
