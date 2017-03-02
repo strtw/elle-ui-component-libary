@@ -195,3 +195,28 @@
     z-index:1;
   }
 }
+
+.tabs__panelControl[name="tab-controls-minimal"] {
+  display: none;
+  &:checked + .tabs__panel {
+    z-index: 3;
+  }
+  &:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"] {
+    border-right: 2px solid $invertDefaultColor;
+    background-color: $invertDefaultColor;
+    color:$baseColorMed;
+    z-index:1;
+  }
+  &:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"] {
+    border-right: 2px solid $invertDefaultColor;
+    background-color: $invertDefaultColor;
+    color:$baseColorMed;
+    z-index:1;
+  }
+  &:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab3"] {
+    border-right: 2px solid $invertDefaultColor;
+    background-color: $invertDefaultColor;
+    color:$baseColorMed;
+    z-index:1;
+  }
+}
