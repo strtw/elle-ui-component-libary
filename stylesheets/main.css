@@ -1619,7 +1619,7 @@ progress[value]::-moz-progress-bar {
   padding: 0;
   border-radius: 3px; }
 
-.tabs__tab {
+.tabs__tab, .tabs__tab--vertical {
   background-color: #EA1B64;
   color: #FFFFFF;
   position: relative;
@@ -1628,18 +1628,39 @@ progress[value]::-moz-progress-bar {
   width: 100px;
   padding: 18px;
   border: 1px solid #BDBDBD;
-  border-bottom: none;
   border-radius: 3px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
   text-align: center;
   vertical-align: bottom; }
-  .tabs__tab:nth-child(2) {
+  .tabs__tab:nth-child(2), .tabs__tab--vertical:nth-child(2) {
     background-color: #CF477C;
     padding: 15px; }
-  .tabs__tab:nth-child(3) {
+  .tabs__tab:nth-child(3), .tabs__tab--vertical:nth-child(3) {
     padding: 12px;
     background-color: #EF4381; }
+
+.tabs__tab {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none; }
+
+.tabs__tab--vertical {
+  display: block;
+  position: relative;
+  margin: 0 0 2px 20px;
+  left: -21px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.tabs--vertical {
+  position: relative;
+  width: 670px;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+  margin-top: 50px;
+  padding: 0;
+  border-radius: 3px;
+  left: 100px; }
 
 .tabGroup {
   position: relative;
@@ -1647,7 +1668,7 @@ progress[value]::-moz-progress-bar {
   left: -15px;
   margin: 10px;
   padding: 5px; }
-  .tabGroup > label[cclass="tabs__tab"] {
+  .tabGroup > label[class="tabs__tab"]:nth-child(0) {
     margin: -1px; }
   .tabGroup > label[class="tabs__tab"]:first-child {
     border-top-right-radius: 0;
@@ -1656,6 +1677,23 @@ progress[value]::-moz-progress-bar {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
   .tabGroup > label[class="tabs__tab"]:not(:first-child):not(:last-child) {
+    border-radius: 0; }
+
+.tabVerticalGroup {
+  position: relative;
+  top: 42px;
+  left: -113px;
+  margin: 10px;
+  padding: 5px; }
+  .tabVerticalGroup > label[class="tabs__tab"] {
+    margin: -1px; }
+  .tabVerticalGroup > label[class="tabs__tab"]:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .tabVerticalGroup > label[class="tabs__tab"]:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .tabVerticalGroup > label[class="tabs__tab"]:not(:first-child):not(:last-child) {
     border-radius: 0; }
 
 .tabs__panel {
@@ -1695,21 +1733,41 @@ progress[value]::-moz-progress-bar {
   top: 40px;
   padding: 10px; }
 
-.tabs__panelControl {
+.tabs__panelControl[name="tab-controls-vertical"] {
   display: none; }
-  .tabs__panelControl:checked + .tabs__panel {
+  .tabs__panelControl[name="tab-controls-vertical"]:checked + .tabs__panel {
     z-index: 1; }
-  .tabs__panelControl:checked[id="tab1"] ~ .tabGroup .tabs__tab[class*="tab1"] {
+  .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"] {
+    border-right: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #EA1B64;
+    z-index: 1; }
+  .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"] {
+    border-right: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #EA1B64;
+    z-index: 1; }
+  .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab3"] {
+    border-right: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #EA1B64;
+    z-index: 1; }
+
+.tabs__panelControl[name="tab-controls"] {
+  display: none; }
+  .tabs__panelControl[name="tab-controls"]:checked + .tabs__panel {
+    z-index: 1; }
+  .tabs__panelControl[name="tab-controls"]:checked[id*="tab1"] ~ .tabGroup .tabs__tab[class*="tab1"] {
     border-bottom: 2px solid #FFFFFF;
     background-color: #FFFFFF;
     color: #EA1B64;
     z-index: 1; }
-  .tabs__panelControl:checked[id="tab2"] ~ .tabGroup .tabs__tab[class*="tab2"] {
+  .tabs__panelControl[name="tab-controls"]:checked[id*="tab2"] ~ .tabGroup .tabs__tab[class*="tab2"] {
     border-bottom: 2px solid #FFFFFF;
     background-color: #FFFFFF;
     color: #EA1B64;
     z-index: 1; }
-  .tabs__panelControl:checked[id="tab3"] ~ .tabGroup .tabs__tab[class*="tab3"] {
+  .tabs__panelControl[name="tab-controls"]:checked[id*="tab3"] ~ .tabGroup .tabs__tab[class*="tab3"] {
     border-bottom: 2px solid #FFFFFF;
     background-color: #FFFFFF;
     color: #EA1B64;
