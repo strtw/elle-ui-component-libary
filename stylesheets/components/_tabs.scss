@@ -3,24 +3,31 @@
   width: 670px;
   height:300px;
   @include componentBoxLarge;
-  margin-top:50px;
+  margin-top:80px;
   padding:0;
   border-radius: $borderRoundedSoft;
 }
 
 
 %tabs-default{
+  border-radius: $borderRoundedSoft;
+  width:100px;
+  padding:18px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.tabs__tab{
+  @extend %tabs-default;
   background-color: $baseColorMed;
   color:$invertDefaultColor;
   position:relative;
   top:-57px;
   display:inline-block;
-  width:100px;
-  padding:18px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   border:1px solid $altColor;
-  border-radius: $borderRoundedSoft;
-  text-align: center;
-  vertical-align: bottom;
+  border-bottom: none;
   &:nth-child(2){
     background-color:$baseColorAlt;
     padding:15px;
@@ -31,29 +38,63 @@
   }
 }
 
-.tabs__tab{
-  @extend %tabs-default;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: none;
-}
-
 .tabs__tab--vertical{
 @extend %tabs-default;
+  background-color: $baseColorMed;
+  color:$invertDefaultColor;
+  display: block;
+  position: relative;
+  margin: 0 0 2px 20px;
+  left: -21px;
+  border:1px solid $altColor;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  top:-57px;
+  &:nth-child(2){
+    background-color:$baseColorAlt;
+    padding:15px;
+  }
+  &:nth-child(3){
+    padding:12px;
+    background-color: $baseColorLight;
+  }
+  &:nth-child(2){
+    padding:15px;
+    width:95%;
+    left:-5%;
+  }
+  &:nth-child(3){
+    padding:12px;
+    width:90%;
+    left:0;
+  }
+}
+
+.tabs__tab--verticalMinimal{
+  @extend %tabs-default;
+  background-color: $invertDefaultColor;
+  color:$baseColorMed;
   display: block;
   position: relative;
   margin: 0 0 2px 20px;
   left: -21px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  text-align: left;
+  font-weight:$weightBold;
+  opacity:.5;
+  &:nth-child(2),
+  &:nth-child(3){
+    background-color:$invertDefaultColor;
+  }
 }
+
 
 .tabs--vertical{
   position:relative;
   width: 670px;
   height:300px;
   @include componentBoxLarge;
-  margin-top:50px;
   padding:0;
   border-radius: $borderRoundedSoft;
   left:100px;
@@ -85,6 +126,7 @@
   position:relative;
   top:42px;
   left:-113px;
+  width:100px;
   @include componentBoxMed;
   & > label[class="tabs__tab"]{
     margin:-1px;
@@ -102,16 +144,25 @@
   }
 }
 
-.tabs__panel{
+%tabs-panel{
   position:absolute;
   top:0;
-  border: 1px solid $altColor;
-  border-radius: $borderRoundedSoft;
-  border-top-left-radius: 0;
   background-color: $invertDefaultColor;
   width:100%;
   height:100%;
   z-index:0;
+}
+
+.tabs__panel{
+  @extend %tabs-panel;
+  border:1px solid $altColor;
+  border-radius: $borderRoundedSoft;
+  border-top-left-radius: 0;
+}
+
+.tabs__panelMinimal{
+  @extend %tabs-panel;
+  border-bottom: 5px solid $baseColorMed;
 }
 
 .tabs__paragraph{
@@ -150,19 +201,9 @@
   &:checked + .tabs__panel {
     z-index: 1;
   }
-  &:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"] {
-    border-right: 2px solid $invertDefaultColor;
-    background-color: $invertDefaultColor;
-    color:$baseColorMed;
-    z-index:1;
-  }
-  &:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"] {
-    border-right: 2px solid $invertDefaultColor;
-    background-color: $invertDefaultColor;
-    color:$baseColorMed;
-    z-index:1;
-  }
-  &:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab3"] {
+  &:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"],
+  &:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"],
+  &:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab3"]{
     border-right: 2px solid $invertDefaultColor;
     background-color: $invertDefaultColor;
     color:$baseColorMed;
@@ -176,18 +217,8 @@
   &:checked + .tabs__panel {
     z-index: 1;
   }
-  &:checked[id*="tab1"] ~ .tabGroup .tabs__tab[class*="tab1"] {
-    border-bottom: 2px solid $invertDefaultColor;
-    background-color: $invertDefaultColor;
-    color:$baseColorMed;
-    z-index:1;
-  }
-  &:checked[id*="tab2"] ~ .tabGroup .tabs__tab[class*="tab2"] {
-    border-bottom: 2px solid $invertDefaultColor;
-    background-color: $invertDefaultColor;
-    color:$baseColorMed;
-    z-index:1;
-  }
+  &:checked[id*="tab1"] ~ .tabGroup .tabs__tab[class*="tab1"],
+  &:checked[id*="tab2"] ~ .tabGroup .tabs__tab[class*="tab2"],
   &:checked[id*="tab3"] ~ .tabGroup .tabs__tab[class*="tab3"] {
     border-bottom: 2px solid $invertDefaultColor;
     background-color: $invertDefaultColor;
@@ -198,25 +229,17 @@
 
 .tabs__panelControl[name="tab-controls-minimal"] {
   display: none;
-  &:checked + .tabs__panel {
+  &:checked + .tabs__panelMinimal {
     z-index: 3;
   }
-  &:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"] {
-    border-right: 2px solid $invertDefaultColor;
-    background-color: $invertDefaultColor;
-    color:$baseColorMed;
+  &:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab1"],
+  &:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab2"],
+  &:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab3"]{
+    color: $baseColorDark;
+    border-bottom: 3px solid $baseColorDark;
     z-index:1;
-  }
-  &:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"] {
-    border-right: 2px solid $invertDefaultColor;
-    background-color: $invertDefaultColor;
-    color:$baseColorMed;
-    z-index:1;
-  }
-  &:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab3"] {
-    border-right: 2px solid $invertDefaultColor;
-    background-color: $invertDefaultColor;
-    color:$baseColorMed;
-    z-index:1;
+    opacity:1;
+    transition:opacity $transitionSlow ease;
   }
 }
+
