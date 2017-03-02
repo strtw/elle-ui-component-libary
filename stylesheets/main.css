@@ -1774,6 +1774,7 @@ progress[value]::-moz-progress-bar {
     z-index: 1; }
 
 /********** LIST STYLES **********/
+/* Compiled on timestamp() */
 .uiList {
   border-style: solid;
   border-width: 1px 1px 0 1px;
@@ -1811,7 +1812,37 @@ progress[value]::-moz-progress-bar {
 .uiList__item--primary {
   border-color: #C31F5D; }
 
+/* dark styles */
+.uiList--dark {
+  border-color: dimgray; }
+
+.uiList__item--dark {
+  border-color: dimgray;
+  border-width: 0 0 1px .5em;
+  padding: .5em .5em .5em .5em;
+  opacity: 1; }
+
+.uiList__item--dark:hover {
+  padding: .5em .5em .5em .5em;
+  border: solid #959595;
+  border-width: 0 0 1px .5em;
+  border-bottom-color: dimgray; }
+
+.uiList__item--dark:hover:before {
+  color: #959595; }
+
+.uiList__item--dark:before {
+  color: dimgray;
+  margin-left: -5px; }
+
+.uiList__item--dark:first-child {
+  border-top-left-radius: 2px; }
+
+.uiList__item--dark:last-child {
+  border-bottom-left-radius: 2px; }
+
 /********** Table Styles **********/
+/* Compiled on timestamp() */
 .uiTableContainer {
   border: 2px solid #C31F5D;
   display: inline-block;
@@ -1848,5 +1879,22 @@ progress[value]::-moz-progress-bar {
 
 .uiTable__cell--right {
   text-align: right; }
+
+/* dark style */
+.uiTable__cell--dark {
+  background-color: dimgray;
+  color: white; }
+
+.uiTableContainer--dark {
+  border-color: dimgray; }
+
+.uiTable_bodyRow--dark {
+  border-color: dimgray; }
+
+.uiTable_bodyRow--dark:nth-child(even) {
+  background-color: lightgray; }
+
+.uiTable_headRow--dark {
+  border-color: dimgray; }
 
 /*# sourceMappingURL=main.css.map */

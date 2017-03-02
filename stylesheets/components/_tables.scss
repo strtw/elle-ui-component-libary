@@ -1,5 +1,5 @@
 /********** Table Styles **********/
-
+/* Compiled on #{timestamp()} */
 .uiTableContainer {
   border: $borderDefault $baseColorDark;
   display: inline-block;
@@ -51,3 +51,20 @@
 .uiTable__cell--right {
   text-align: right;
 }
+/* dark style */
+    .uiTable__cell--dark {
+      background-color: dimgray;
+      color: white;
+    }
+    .uiTableContainer--dark {
+      border-color: dimgray;
+    }
+    .uiTable_bodyRow--dark {
+      border-color: dimgray;
+    }
+    .uiTable_bodyRow--dark:nth-child(even) {
+      background-color: lightgray;
+    }
+    .uiTable_headRow--dark {
+      border-color: dimgray;
+    }
