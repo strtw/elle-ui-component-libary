@@ -11,9 +11,16 @@
 	flex-flow: column wrap;
 }
 
-// .componentContainer__markup{
-// 	@include componentBoxMed();
-// 	font-size: 1.1rem;
-// 	background-color:$altColor;
-// 	overflow-x: scroll;
-// }
+.componentContainer__markup{
+	display: none;
+ 	background-color: $altColor;
+ 	font-size: 1.1rem;
+ 	margin: 10px;
+ 	overflow-x: scroll;
+ 	padding: 30px;
+}
+
+.componentContainer__markup > pre > code{
+	 	color: $invertDefaultColor;
+	 	font-size: 1.2rem;
+}
