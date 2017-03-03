@@ -1585,12 +1585,17 @@ progress[value]::-moz-progress-bar {
   opacity: 0;
   transition: all 0.4s ease;
   z-index: 9999; }
+  .modal__foreground > form {
+    display: none; }
 
 .modal__control {
   display: none; }
   .modal__control:checked ~ .modal__background, .modal__control:checked ~ .modal__foreground {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    display: block; }
+  .modal__control:checked ~ .modal__foreground > form {
+    display: inline-block; }
 
 .tabs {
   position: relative;
