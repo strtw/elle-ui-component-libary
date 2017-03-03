@@ -2027,9 +2027,15 @@ main {
   flex-direction: row-reverse;
   align-items: flex-start; }
 
-.sidenav__demoBox {
-  position: relative;
-  display: block; }
+body {
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+  overflow: auto; }
 
 .row {
   width: 100%;
