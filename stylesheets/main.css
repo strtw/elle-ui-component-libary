@@ -1428,7 +1428,6 @@ progress[value]::-moz-progress-bar {
   left: 0;
   margin: 0;
   padding: 0;
-  position: fixed;
   top: 100px;
   right: 100%; }
 
@@ -1931,5 +1930,29 @@ progress[value]::-moz-progress-bar {
 
 .uiTable_headRow--dark {
   border-color: dimgray; }
+
+.sideBar {
+  position: sticky;
+  position: -webkit-sticky;
+  width: 20%;
+  top: 0px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #FFFFFF; }
+
+.sideBar__items {
+  list-style-type: none; }
+
+main {
+  width: 80%; }
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start; }
+
+.sidenav__demoBox {
+  position: relative;
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
