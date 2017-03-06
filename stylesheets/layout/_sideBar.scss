@@ -6,10 +6,18 @@
   height:100vh;
   overflow-y:auto;
   background-color: $invertDefaultColor;
+  & a{
+    @include lovehate($self:true);
+  }
 }
 
 .sideBar__items{
   list-style-type: none;
+  @include componentBoxMed;
+}
+
+.sideBar--scrollSpyActive{
+  border-left: 3px solid $baseColorMed;
 }
 
 main{
