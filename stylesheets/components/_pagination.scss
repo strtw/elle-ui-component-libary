@@ -1,0 +1,167 @@
+/********** PAGINATION STYLES **********/
+
+$paginationPrimaryColor: #EA1B64;
+
+/* for hover effects on :before & :after elements
+  in safari add these to parent element */
+
+.paginationList {
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.paginationList:before {
+  content: "\f053";
+}
+
+.paginationList:after {
+  content: "\f054";
+}
+
+.paginationList:before,
+.paginationList:after {
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: .75em;
+  padding: .3em .75em;
+  pointer-events: auto;
+}
+
+.paginationList__item {
+  /* counter-increment: pageCount; */
+  color: darkgray;
+  cursor: pointer;
+  display: inline;
+  font-size: .75em;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0 .5em;
+  padding: .3em .75em;
+  pointer-events: auto;
+}
+
+.paginationList__item a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.paginationList__item a:hover {
+  text-decoration: none;
+}
+
+/*
+.paginationList__item:before {
+   content: counter(pageCount); 
+}
+*/
+
+.paginationList__item--doubleDigit {
+  padding: .3em .5em;
+}
+
+.paginationList__item--spacer {
+  padding: .3em .7em;
+}
+
+
+/*  FF only  */
+
+@-moz-document url-prefix() {
+  .paginationList__item--spacer {
+    padding: .3em .6em;
+  }
+}
+
+
+/* Safari only */
+
+_::-webkit-full-page-media,
+_:future,
+:root .paginationList__item--spacer {
+  padding: .3em .6em;
+}
+
+.paginationList__item--spacer:before {
+  content: "\f141";
+  font-family: FontAwesome;
+}
+
+.paginationList--simple .paginationList__item--spacer {
+  cursor: default;
+}
+
+.paginationList--round .paginationList__item--spacer:hover,
+.paginationList--square .paginationList__item--spacer:hover {
+  background-color: inherit;
+  cursor: default;
+}
+
+.paginationList--round:before, .paginationList--round:after {
+  font-size: 1.95em;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.paginationList--round:before {
+  content: "\f137";
+}
+
+.paginationList--round:after {
+  content: "\f138";
+}
+
+.paginationList__item--round:hover a,
+.paginationList__item--square:hover a {
+  color: white;
+}
+
+.paginationList--primary:before,
+.paginationList--primary:after,
+.paginationList--simple:before,
+.paginationList--simple:after {
+  color: $paginationPrimaryColor;
+}
+
+.paginationList--simple .paginationList__item--active a,
+.paginationList--simple .paginationList__item a:hover {
+  color: $paginationPrimaryColor;
+}
+
+.paginationList__item--round {
+  border-radius: 50%;
+  border: 2px solid $paginationPrimaryColor;
+}
+
+.paginationList__item--round:hover {
+  background-color: $paginationPrimaryColor;
+  color: white;
+}
+
+.paginationList__item--roundActive,
+.paginationList__item--squareActive {
+  background-color: $paginationPrimaryColor;
+  color: white;
+}
+
+.paginationList__item--roundActive a,
+.paginationList__item--squareActive a {
+  color: white;
+}
+
+.paginationList__item--square {
+  border: 2px solid $paginationPrimaryColor;
+}
+
+.paginationList__item--square:hover {
+  background-color: $paginationPrimaryColor;
+  color: white;
+}
+
+.paginationList--primary a,
+.paginationList--primary .paginationList__item--spacer {
+  color: $paginationPrimaryColor;
+}
+
+.paginationList__item--roundActive a {
+  color: white;
+}
