@@ -18,7 +18,7 @@ for(var i = 0; i < compContainers.length; i++){
 
 	markupToggleLabel.setAttribute('for', markupSwitch.id);
 	markupToggleLabel.className ="button--primary";
-	markupToggleLabel.textContent = "Toggle HTML";
+	markupToggleLabel.textContent = "Toggle HTML Markup";
 
 	compMarkupDisplay.parentNode.insertBefore(markupToggleLabel, compMarkupDisplay);
 	compMarkupDisplay.parentNode.insertBefore(markupSwitch, compMarkupDisplay);
