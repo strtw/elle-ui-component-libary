@@ -28,9 +28,6 @@
                         dataItemId = dataItems[j].getAttribute("id");
                         if (navLinks[i].hash == "#" + dataItemId && classCount < 1) {
                         navHeaders[i].classList.add('sideBar--scrollSpyActive');
-                            //navHeaders[i].className +=
-                            // "sideBar--scrollSpyActive";
-                            //classCount++;
                         }
                     }
                 }

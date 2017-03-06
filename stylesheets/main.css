@@ -2230,9 +2230,7 @@ _:future,
     text-decoration: none; }
 
 .sideBar__items {
-  list-style-type: none;
-  margin: 10px;
-  padding: 5px; }
+  list-style-type: none; }
 
 .sideBar--scrollSpyActive {
   border-left: 3px solid #EA1B64; }
