@@ -11,9 +11,43 @@
 	flex-flow: column wrap;
 }
 
-// .componentContainer__markup{
-// 	@include componentBoxMed();
-// 	font-size: 1.1rem;
-// 	background-color:$altColor;
-// 	overflow-x: scroll;
-// }
+.componentSection__markupSwitchLabel{
+	font-size: 1.2rem;
+	margin: 10px 0;
+	display: inline-block;
+	padding: 5px;
+	cursor: pointer;
+	border: 1px solid $baseColorLight;
+
+}
+.componentSection_markupSwitch:checked + .componentContainer__markup{
+	height: auto;
+ 	overflow-x: scroll;
+ 	padding: 10px;
+
+}
+
+.componentSection_markupSwitch{
+	display: none;
+}
+
+.componentContainer__markup{
+	@include componentBoxLarge();
+	height: 0;
+	padding: 0;
+	margin: 0;
+
+ 	background-color: gray;
+ 	color: white;
+ 	overflow-x: scroll;
+ 	transition: height 0.8s ease-in;
+ 	border-radius: 10px;
+ 	font-size: 1.1rem;
+}
+
+
+
+.componentContainer__markup > pre > code{
+	 	color: $invertDefaultColor;
+	 	font-size: 1.2rem;
+}

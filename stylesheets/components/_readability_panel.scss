@@ -1,0 +1,112 @@
+/********** READABILITY PANEL **********/
+$accContainerColor: #d3d3d3;
+
+html {
+  -webkit-transition: font-size .2s linear;
+  font-size: 100%;
+  transition: font-size .2s linear;
+}
+
+.accContainer {
+  background-color: $accContainerColor;
+  border-radius: 6px;
+  border-width: 2px 4px 0 2px;
+  border: solid $accContainerColor;
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+}
+
+.accToggle {
+  border-right: 1px solid #FFF;
+  display: inline-block;
+  font-size: initial;
+}
+
+.accToggle:last-child {
+  border: none;
+}
+
+.accToggle .toggle__label {
+  position: absolute;
+  top: 0;
+}
+
+.acc_Invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.acc_Grayscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.acc_LargerFont {
+  font-size: 125% !important;
+  -webkit-transition: font-size .1s linear;
+  transition: font-size .1s linear;
+}
+
+.acc_LargerFont .toggle__toggleInput + .toggle__label:after {
+  line-height: 0;
+}
+
+.acc_LargerFont .toggle__toggleInput:checked + .toggle__label:before {
+  line-height: 0;
+}
+
+
+/* toggle icons */
+
+.accToggle .toggle__toggleInput:checked + .toggle__label--accInvert:before {
+  content: "\f042";
+  font-family: "FontAwesome";
+  font-size: 1.5em;
+  left: 0;
+  line-height: 100%;
+  margin: 0 0 0 -33px;
+  position: absolute;
+}
+
+.accToggle .toggle__toggleInput + .toggle__label--accInvert:after {
+  content: "\f042";
+  font-family: "FontAwesome";
+  font-size: 1.5em;
+  left: 0;
+  line-height: 100%;
+  margin: 0 0 0 45px;
+  position: absolute;
+}
+
+.accToggle .toggle__toggleInput:checked + .toggle__label--accGrayScale:before {
+  color: #fff;
+  content: "\f26c";
+  font-family: "FontAwesome";
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+.accToggle .toggle__toggleInput + .toggle__label--accGrayScale:after {
+  color: #EA1B64;
+  content: "\f26c";
+  font-family: "FontAwesome";
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin: 0 0 0 43px;
+}
+
+.accToggle .toggle__toggleInput:checked + .toggle__label--accLargerFont:before {
+  color: #fff;
+  content: "\f031";
+  font-family: "FontAwesome";
+  font-size: 1.25em;
+  line-height: 1.1em;
+}
+
+.accToggle .toggle__toggleInput + .toggle__label--accLargerFont:after {
+  color: #000;
+  content: "\f031";
+  font-family: "FontAwesome";
+  margin: 0 0 0 47px;
+}

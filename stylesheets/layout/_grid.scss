@@ -1,0 +1,25 @@
+.row{
+	width: 100%;
+	display: flex;
+}
+
+[class^="col"]{
+	border: 2px solid white;
+	
+}
+
+@for $i from 1 through 12{
+	.col#{$i}{
+		width: (100% / 12 * $i);
+	}
+}
+
+.col--styled{
+	align-items: center;
+	background-color: $baseColorLight;
+	border-radius: $borderRoundedHard;
+	color: $invertDefaultColor;
+	display: flex;
+	height: 35px;
+	justify-content: center;
+}

@@ -44,20 +44,33 @@
 - Innovative - Search w/ Loading Indicator [Brian]
 - Innovative - Definition Zoom [Brian]
 - Innovative - Search w/ Long Edit [Stu]
+- Innovative - Readability Improvement Panel [Rafael] 
+
 
 ## To Do 
+###Primary (** denotes complete)
+- 12-Column Grid [Brian]
+- ** Lists: [Rafael]Show different styles of ordered and unordered lists
+- ** Tables [Rafael]
+- Modals [STU] (One done)
+- Scrollspy [STU]
+- ** Tabs: [STU] Develop at least three types of tabs
+- Accordion: Make accordion opens and closes gracefully [PJ]
+- Carousels:[Brian] Develop at least three types of Carousels.
+- Pagination 
+
+--[PJ], [Ruben]: Create innovative UI element. 
+
+###Secondary
 - Finish Main Site Nav
 - Responsiveness
-- Grid
 
 --- 
 
 ### Other Ideas
-- Tables
 - Lists
 - Jumbotron
 - Social Media Buttons
-- Modal
 - Code
 - Article 
 - Index

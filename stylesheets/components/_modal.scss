@@ -1,0 +1,39 @@
+.modal__background{
+  background-color:$altColorTransparent;
+  bottom:0;
+  position:fixed;
+  visibility:hidden;
+  top:0;
+  right:0;
+  left:0;
+  opacity:0;
+  transition:all $transitionMed ease;
+  z-index:9998;
+}
+
+.modal__closeLabel  i{
+  position:absolute;
+  top:10px;
+  right:10px;
+  color:$invertDefaultColor;
+  z-index:1;
+}
+
+.modal__foreground{
+  position: fixed;
+  top: 100px;
+  left: 36%;
+  opacity:0;
+  transition:all $transitionMed ease;
+  z-index:9999;
+
+}
+
+.modal__control{
+  display:none;
+  &:checked ~ .modal__background,
+  &:checked ~ .modal__foreground{
+    opacity:1;
+    visibility: visible;
+  }
+}
