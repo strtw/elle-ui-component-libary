@@ -7,7 +7,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   width: 95%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1600px; }
 
 main {
   margin: 20px;
@@ -1498,12 +1499,17 @@ progress[value]::-moz-progress-bar {
   opacity: 0;
   transition: all 0.4s ease;
   z-index: 9999; }
+  .modal__foreground > form {
+    display: none; }
 
 .modal__control {
   display: none; }
   .modal__control:checked ~ .modal__background, .modal__control:checked ~ .modal__foreground {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    display: block; }
+  .modal__control:checked ~ .modal__foreground > form {
+    display: inline-block; }
 
 .tabs {
   position: relative;
@@ -2221,9 +2227,14 @@ _:future,
   height: 100vh;
   overflow-y: auto;
   background-color: #FFFFFF; }
+  .sideBar a {
+    text-decoration: none; }
 
 .sideBar__items {
   list-style-type: none; }
+
+.sideBar--scrollSpyActive {
+  border-left: 3px solid #EA1B64; }
 
 main {
   width: 80%; }
@@ -2232,10 +2243,6 @@ main {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start; }
-
-.sidenav__demoBox {
-  position: relative;
-  display: block; }
 
 .row {
   width: 100%;
