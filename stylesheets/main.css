@@ -1564,11 +1564,11 @@ progress[value]::-moz-progress-bar {
   .tabs__tab--vertical:nth-child(2) {
     padding: 15px;
     width: 95%;
-    left: -5%; }
+    left: -7%; }
   .tabs__tab--vertical:nth-child(3) {
     padding: 12px;
     width: 90%;
-    left: 0; }
+    left: -2px; }
 
 .tabs__tab--verticalMinimal {
   background-color: #FFFFFF;
@@ -1597,7 +1597,7 @@ progress[value]::-moz-progress-bar {
 
 .tabGroup {
   position: relative;
-  top: -31px;
+  top: -313px;
   left: -15px;
   margin: 10px;
   padding: 5px; }
@@ -1614,7 +1614,7 @@ progress[value]::-moz-progress-bar {
 
 .tabVerticalGroup {
   position: relative;
-  top: 42px;
+  top: -258px;
   left: -113px;
   width: 100px;
   margin: 10px;
@@ -1632,11 +1632,13 @@ progress[value]::-moz-progress-bar {
 
 .tabs__panel, .tabs__panelMinimal {
   display: none;
+  align-items: center;
+  justify-content: space-around;
   top: 0;
   background-color: #FFFFFF;
   width: 100%;
   height: 100%;
-  z-index: 0; }
+  z-index: 2; }
 
 .tabs__panel {
   border: 1px solid #BDBDBD;
@@ -1665,17 +1667,14 @@ progress[value]::-moz-progress-bar {
   border-radius: 20px; }
 
 .tabs__mainContentContainer {
-  width: 345px;
   height: 218px;
-  float: right;
   position: relative;
-  top: 40px;
   padding: 10px; }
 
 .tabs__panelControl[name="tab-controls-vertical"] {
   display: none; }
   .tabs__panelControl[name="tab-controls-vertical"]:checked + .tabs__panel {
-    display: block; }
+    display: flex; }
   .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"], .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"], .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab3"] {
     border-right: 2px solid #FFFFFF;
     background-color: #FFFFFF;
@@ -1685,7 +1684,7 @@ progress[value]::-moz-progress-bar {
 .tabs__panelControl[name="tab-controls"] {
   display: none; }
   .tabs__panelControl[name="tab-controls"]:checked + .tabs__panel {
-    display: block; }
+    display: flex; }
   .tabs__panelControl[name="tab-controls"]:checked[id*="tab1"] ~ .tabGroup .tabs__tab[class*="tab1"], .tabs__panelControl[name="tab-controls"]:checked[id*="tab2"] ~ .tabGroup .tabs__tab[class*="tab2"], .tabs__panelControl[name="tab-controls"]:checked[id*="tab3"] ~ .tabGroup .tabs__tab[class*="tab3"] {
     border-bottom: 2px solid #FFFFFF;
     background-color: #FFFFFF;
@@ -1695,7 +1694,7 @@ progress[value]::-moz-progress-bar {
 .tabs__panelControl[name="tab-controls-minimal"] {
   display: none; }
   .tabs__panelControl[name="tab-controls-minimal"]:checked + .tabs__panelMinimal {
-    display: block; }
+    display: flex; }
   .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab1"], .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab2"], .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab3"] {
     color: #C31F5D;
     border-bottom: 3px solid #C31F5D;
