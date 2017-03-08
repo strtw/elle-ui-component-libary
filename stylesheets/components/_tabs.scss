@@ -103,7 +103,7 @@
 
 .tabGroup{
   position:relative;
-  top:-11px;
+  top:-31px;
   left:-15px;
   @include componentBoxMed;
   & > label[class="tabs__tab"]:nth-child(0){
@@ -145,7 +145,8 @@
 }
 
 %tabs-panel{
-  position:absolute;
+  //position:absolute;
+  display:none;
   top:0;
   background-color: $invertDefaultColor;
   width:100%;
@@ -199,7 +200,7 @@
 .tabs__panelControl[name="tab-controls-vertical"] {
   display: none;
   &:checked + .tabs__panel {
-    z-index: 1;
+    display:block;
   }
   &:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"],
   &:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"],
@@ -215,7 +216,7 @@
 .tabs__panelControl[name="tab-controls"]{
   display: none;
   &:checked + .tabs__panel {
-    z-index: 1;
+    display:block;
   }
   &:checked[id*="tab1"] ~ .tabGroup .tabs__tab[class*="tab1"],
   &:checked[id*="tab2"] ~ .tabGroup .tabs__tab[class*="tab2"],
@@ -230,7 +231,7 @@
 .tabs__panelControl[name="tab-controls-minimal"] {
   display: none;
   &:checked + .tabs__panelMinimal {
-    z-index: 3;
+    display:block;
   }
   &:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab1"],
   &:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab2"],

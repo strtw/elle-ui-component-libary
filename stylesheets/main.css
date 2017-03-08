@@ -1597,7 +1597,7 @@ progress[value]::-moz-progress-bar {
 
 .tabGroup {
   position: relative;
-  top: -11px;
+  top: -31px;
   left: -15px;
   margin: 10px;
   padding: 5px; }
@@ -1631,7 +1631,7 @@ progress[value]::-moz-progress-bar {
     border-radius: 0; }
 
 .tabs__panel, .tabs__panelMinimal {
-  position: absolute;
+  display: none;
   top: 0;
   background-color: #FFFFFF;
   width: 100%;
@@ -1675,7 +1675,7 @@ progress[value]::-moz-progress-bar {
 .tabs__panelControl[name="tab-controls-vertical"] {
   display: none; }
   .tabs__panelControl[name="tab-controls-vertical"]:checked + .tabs__panel {
-    z-index: 1; }
+    display: block; }
   .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"], .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"], .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab3"] {
     border-right: 2px solid #FFFFFF;
     background-color: #FFFFFF;
@@ -1685,7 +1685,7 @@ progress[value]::-moz-progress-bar {
 .tabs__panelControl[name="tab-controls"] {
   display: none; }
   .tabs__panelControl[name="tab-controls"]:checked + .tabs__panel {
-    z-index: 1; }
+    display: block; }
   .tabs__panelControl[name="tab-controls"]:checked[id*="tab1"] ~ .tabGroup .tabs__tab[class*="tab1"], .tabs__panelControl[name="tab-controls"]:checked[id*="tab2"] ~ .tabGroup .tabs__tab[class*="tab2"], .tabs__panelControl[name="tab-controls"]:checked[id*="tab3"] ~ .tabGroup .tabs__tab[class*="tab3"] {
     border-bottom: 2px solid #FFFFFF;
     background-color: #FFFFFF;
@@ -1695,7 +1695,7 @@ progress[value]::-moz-progress-bar {
 .tabs__panelControl[name="tab-controls-minimal"] {
   display: none; }
   .tabs__panelControl[name="tab-controls-minimal"]:checked + .tabs__panelMinimal {
-    z-index: 3; }
+    display: block; }
   .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab1"], .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab2"], .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab3"] {
     color: #C31F5D;
     border-bottom: 3px solid #C31F5D;
