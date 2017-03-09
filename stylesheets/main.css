@@ -1513,7 +1513,6 @@ progress[value]::-moz-progress-bar {
 .tabs {
   position: relative;
   width: 670px;
-  height: 300px;
   margin: 20px;
   padding: 10px;
   margin-top: 80px;
@@ -1588,7 +1587,6 @@ progress[value]::-moz-progress-bar {
 .tabs--vertical {
   position: relative;
   width: 670px;
-  height: 300px;
   margin: 20px;
   padding: 10px;
   padding: 0;
@@ -1634,6 +1632,7 @@ progress[value]::-moz-progress-bar {
   display: none;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   top: 0;
   background-color: #FFFFFF;
   width: 100%;
@@ -1661,15 +1660,15 @@ progress[value]::-moz-progress-bar {
 .tabs__mainImage {
   margin: 20px;
   padding: 10px;
-  max-width: 280px;
+  max-width: 200px;
   max-height: 300px;
   vertical-align: middle;
   border-radius: 20px; }
 
 .tabs__mainContentContainer {
-  height: 218px;
   position: relative;
-  padding: 10px; }
+  padding: 10px;
+  width: 60%; }
 
 .tabs__panelControl[name="tab-controls-vertical"] {
   display: none; }

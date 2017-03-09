@@ -1,7 +1,7 @@
 .tabs{
   position:relative;
   width: 670px;
-  height:300px;
+ // height:300px;
   @include componentBoxLarge;
   margin-top:80px;
   padding:0;
@@ -93,7 +93,6 @@
 .tabs--vertical{
   position:relative;
   width: 670px;
-  height:300px;
   @include componentBoxLarge;
   padding:0;
   border-radius: $borderRoundedSoft;
@@ -149,6 +148,7 @@
   display:none;
   align-items:center;
   justify-content: space-around;
+  flex-wrap:wrap;
   top:0;
   background-color: $invertDefaultColor;
   width:100%;
@@ -181,7 +181,7 @@
 
 .tabs__mainImage{
   @include componentBoxLarge;
-  max-width: 280px;
+  max-width: 200px;
   max-height: 300px;
   vertical-align: middle;
   border-radius: $borderRoundedHard;
@@ -189,11 +189,12 @@
 
 .tabs__mainContentContainer{
   //width: 345px;
-  height: 218px;
+
   //float: right;
   position: relative;
  // top: -250px;
   padding: 10px;
+  width:60%;
 }
 
 
