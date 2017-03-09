@@ -270,10 +270,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20px; }
 
 .buttonGroup {
+  display: inline-flex;
   margin: 10px;
   padding: 5px; }
   .buttonGroup > a[class*="button"] {
-    margin: -3px; }
+    margin: -3px;
+    display: inherit; }
   .buttonGroup > a[class*="button"]:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }

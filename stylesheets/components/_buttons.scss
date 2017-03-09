@@ -66,9 +66,11 @@
 }
 
 .buttonGroup{
+  display:inline-flex;
   @include componentBoxMed;
   & > a[class*="button"]{
     margin:-3px;
+    display:inherit;
   }
   & > a[class*="button"]:first-child{
     border-top-right-radius: 0;
