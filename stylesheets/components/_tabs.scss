@@ -101,8 +101,8 @@
 
 
 .tabGroup{
-  position:relative;
-  top:-313px;
+  position:absolute;
+  top:-12px;
   left:-15px;
   @include componentBoxMed;
   & > label[class="tabs__tab"]:nth-child(0){
@@ -122,8 +122,8 @@
 }
 
 .tabVerticalGroup{
-  position:relative;
-  top:-258px;
+  position:absolute;
+  top:42px;
   left:-113px;
   width:100px;
   @include componentBoxMed;
@@ -171,12 +171,6 @@
 .tabs__paragraph{
   color:$defaultColorLight;
   @include fontContent;
-}
-
-.tabs__imgHelper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
 }
 
 .tabs__mainImage{

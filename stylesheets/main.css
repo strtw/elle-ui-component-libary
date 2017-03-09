@@ -1594,8 +1594,8 @@ progress[value]::-moz-progress-bar {
   left: 100px; }
 
 .tabGroup {
-  position: relative;
-  top: -313px;
+  position: absolute;
+  top: -12px;
   left: -15px;
   margin: 10px;
   padding: 5px; }
@@ -1611,8 +1611,8 @@ progress[value]::-moz-progress-bar {
     border-radius: 0; }
 
 .tabVerticalGroup {
-  position: relative;
-  top: -258px;
+  position: absolute;
+  top: 42px;
   left: -113px;
   width: 100px;
   margin: 10px;
@@ -1651,11 +1651,6 @@ progress[value]::-moz-progress-bar {
   color: #6D6D6D;
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
-
-.tabs__imgHelper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle; }
 
 .tabs__mainImage {
   margin: 20px;
