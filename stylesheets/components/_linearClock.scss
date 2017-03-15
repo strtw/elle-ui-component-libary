@@ -12,12 +12,14 @@
   border: 1px solid white;
   text-align: center;
   color: $defaultColor;
+
 }
 .linearClock__timeIndicator{
   width: 4px;
-  background-color: $defaultColor;
-  height: 10px;
-  top: 17px;
+  background-color: $baseColorDark;
+  opacity: 0.5;
+  height: 24px;
   position: absolute;
   left: 0;
+    top: 14px;
 }
