@@ -9,6 +9,7 @@
   @include componentBoxLarge;
   @include lovehate{$self:true}
   transition:$transitionFast background-color;
+  white-space: nowrap;
 }
 
 //CARD SECTION//

@@ -23,7 +23,7 @@
 .componentSection_markupSwitch:checked + .componentContainer__markup{
 	height: auto;
  	overflow-x: scroll;
- 	padding: 10px;
+ 	padding:0 40px;
 
 }
 
@@ -37,7 +37,7 @@
 	padding: 0;
 	margin: 0;
 
- 	background-color: gray;
+ 	background-color: lightgray;
  	color: white;
  	overflow-x: scroll;
  	transition: height 0.8s ease-in;

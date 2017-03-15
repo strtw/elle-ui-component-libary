@@ -6,9 +6,12 @@
 
 body{
 	@include fontContent();
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	max-width: 1600px;
+	@media only screen and (min-width: 800px){
+		width: 100%;
+	}
 }
 
 main{

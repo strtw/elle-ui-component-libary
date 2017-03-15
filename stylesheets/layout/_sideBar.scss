@@ -1,10 +1,12 @@
+
+
 .sideBar{
   position:sticky;
   position: -webkit-sticky;
-  width:20%;
+  width:25%;
   top:0px;
   height:100vh;
-  overflow-y:auto;
+  overflow-y:scroll;
   background-color: $invertDefaultColor;
   & a{
     @include lovehate($self:true);
@@ -20,7 +22,8 @@
 }
 
 main{
-  width:80%;
+  width:75%;
+  margin:auto;
 }
 
 .container{

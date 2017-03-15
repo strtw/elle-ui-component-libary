@@ -25,7 +25,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin: 20px;
   padding: 10px;
-  transition: 0.2s background-color; }
+  transition: 0.2s background-color;
+  white-space: nowrap; }
 
 .actionCard, .contactCard, .teaserCard {
   border: 1px solid #BDBDBD;
@@ -270,10 +271,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20px; }
 
 .buttonGroup {
+  display: inline-flex;
   margin: 10px;
   padding: 5px; }
   .buttonGroup > a[class*="button"] {
-    margin: -3px; }
+    margin: -3px;
+    display: inherit; }
   .buttonGroup > a[class*="button"]:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
@@ -1514,7 +1517,6 @@ progress[value]::-moz-progress-bar {
 .tabs {
   position: relative;
   width: 670px;
-  height: 300px;
   margin: 20px;
   padding: 10px;
   margin-top: 80px;
@@ -1537,7 +1539,7 @@ progress[value]::-moz-progress-bar {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border: 1px solid #BDBDBD;
-  border-bottom: none; }
+  margin-right: 2px; }
   .tabs__tab:nth-child(2) {
     background-color: #CF477C;
     padding: 15px; }
@@ -1565,11 +1567,11 @@ progress[value]::-moz-progress-bar {
   .tabs__tab--vertical:nth-child(2) {
     padding: 15px;
     width: 95%;
-    left: -5%; }
+    left: -7%; }
   .tabs__tab--vertical:nth-child(3) {
     padding: 12px;
     width: 90%;
-    left: 0; }
+    left: -2px; }
 
 .tabs__tab--verticalMinimal {
   background-color: #FFFFFF;
@@ -1589,7 +1591,6 @@ progress[value]::-moz-progress-bar {
 .tabs--vertical {
   position: relative;
   width: 670px;
-  height: 300px;
   margin: 20px;
   padding: 10px;
   padding: 0;
@@ -1597,9 +1598,12 @@ progress[value]::-moz-progress-bar {
   left: 100px; }
 
 .tabGroup {
-  position: relative;
-  top: -11px;
+  align-items: flex-end;
+  position: absolute;
+  display: flex;
+  top: -12px;
   left: -15px;
+  width: 100%;
   margin: 10px;
   padding: 5px; }
   .tabGroup > label[class="tabs__tab"]:nth-child(0) {
@@ -1614,7 +1618,7 @@ progress[value]::-moz-progress-bar {
     border-radius: 0; }
 
 .tabVerticalGroup {
-  position: relative;
+  position: absolute;
   top: 42px;
   left: -113px;
   width: 100px;
@@ -1632,12 +1636,15 @@ progress[value]::-moz-progress-bar {
     border-radius: 0; }
 
 .tabs__panel, .tabs__panelMinimal {
-  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   top: 0;
   background-color: #FFFFFF;
   width: 100%;
   height: 100%;
-  z-index: 0; }
+  z-index: 2; }
 
 .tabs__panel {
   border: 1px solid #BDBDBD;
@@ -1652,31 +1659,23 @@ progress[value]::-moz-progress-bar {
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
 
-.tabs__imgHelper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle; }
-
 .tabs__mainImage {
   margin: 20px;
   padding: 10px;
-  max-width: 280px;
+  max-width: 200px;
   max-height: 300px;
   vertical-align: middle;
   border-radius: 20px; }
 
 .tabs__mainContentContainer {
-  width: 345px;
-  height: 218px;
-  float: right;
   position: relative;
-  top: 40px;
-  padding: 10px; }
+  padding: 10px;
+  width: 60%; }
 
 .tabs__panelControl[name="tab-controls-vertical"] {
   display: none; }
   .tabs__panelControl[name="tab-controls-vertical"]:checked + .tabs__panel {
-    z-index: 1; }
+    display: flex; }
   .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab1"], .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab2"], .tabs__panelControl[name="tab-controls-vertical"]:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--vertical[class*="tab3"] {
     border-right: 2px solid #FFFFFF;
     background-color: #FFFFFF;
@@ -1686,7 +1685,7 @@ progress[value]::-moz-progress-bar {
 .tabs__panelControl[name="tab-controls"] {
   display: none; }
   .tabs__panelControl[name="tab-controls"]:checked + .tabs__panel {
-    z-index: 1; }
+    display: flex; }
   .tabs__panelControl[name="tab-controls"]:checked[id*="tab1"] ~ .tabGroup .tabs__tab[class*="tab1"], .tabs__panelControl[name="tab-controls"]:checked[id*="tab2"] ~ .tabGroup .tabs__tab[class*="tab2"], .tabs__panelControl[name="tab-controls"]:checked[id*="tab3"] ~ .tabGroup .tabs__tab[class*="tab3"] {
     border-bottom: 2px solid #FFFFFF;
     background-color: #FFFFFF;
@@ -1696,7 +1695,7 @@ progress[value]::-moz-progress-bar {
 .tabs__panelControl[name="tab-controls-minimal"] {
   display: none; }
   .tabs__panelControl[name="tab-controls-minimal"]:checked + .tabs__panelMinimal {
-    z-index: 3; }
+    display: flex; }
   .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab1"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab1"], .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab2"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab2"], .tabs__panelControl[name="tab-controls-minimal"]:checked[id*="tab3"] ~ .tabVerticalGroup .tabs__tab--verticalMinimal[class*="tab3"] {
     color: #C31F5D;
     border-bottom: 3px solid #C31F5D;
@@ -1842,11 +1841,18 @@ html {
   display: inline-block;
   font-size: 0;
   position: relative; }
+  @media screen and (max-width: 359px) {
+    .accContainer {
+      margin: 0 auto;
+      width: 85px; } }
 
 .accToggle {
   border-right: 1px solid #FFF;
   display: inline-block;
   font-size: initial; }
+  @media screen and (max-width: 359px) {
+    .accToggle {
+      border-right: none; } }
 
 .accToggle:last-child {
   border: none; }
@@ -2222,10 +2228,10 @@ _:future,
 .sideBar {
   position: sticky;
   position: -webkit-sticky;
-  width: 20%;
+  width: 25%;
   top: 0px;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: #FFFFFF; }
   .sideBar a {
     text-decoration: none; }
@@ -2237,7 +2243,8 @@ _:future,
   border-left: 3px solid #EA1B64; }
 
 main {
-  width: 80%; }
+  width: 75%;
+  margin: auto; }
 
 .container {
   display: flex;
