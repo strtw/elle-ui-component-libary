@@ -16,10 +16,10 @@
 }
 .linearClock__timeIndicator{
   width: 4px;
-  background-color: $baseColorDark;
+  background-color: $baseColorLight;
   opacity: 0.5;
-  height: 24px;
+  height: 40px;
   position: absolute;
   left: 0;
-    top: 14px;
+    top: -10px;
 }
