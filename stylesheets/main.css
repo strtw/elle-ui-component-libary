@@ -2065,6 +2065,9 @@ _:future,
 .paginationList__item--roundActive a {
   color: white; }
 
+.paginationList--square {
+  line-height: 2em; }
+
 .altCarousel {
   margin: 20px;
   padding: 10px;
