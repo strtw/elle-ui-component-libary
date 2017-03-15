@@ -1841,11 +1841,18 @@ html {
   display: inline-block;
   font-size: 0;
   position: relative; }
+  @media screen and (max-width: 359px) {
+    .accContainer {
+      margin: 0 auto;
+      width: 85px; } }
 
 .accToggle {
   border-right: 1px solid #FFF;
   display: inline-block;
   font-size: initial; }
+  @media screen and (max-width: 359px) {
+    .accToggle {
+      border-right: none; } }
 
 .accToggle:last-child {
   border: none; }
