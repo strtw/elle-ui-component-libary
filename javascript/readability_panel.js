@@ -1,5 +1,4 @@
-window.onload = function () {
-  
+(function (){
   'use strict';
   
   var docBody = document.body;
@@ -77,5 +76,4 @@ window.onload = function () {
       enlargeFont();
     }
   }, false);
-
-};
+})();
