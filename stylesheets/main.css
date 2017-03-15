@@ -2313,6 +2313,7 @@ _:future,
   width: 25%;
   top: 0px;
   height: 100vh;
+  margin: 0 20px 20px 20px;
   overflow-y: scroll;
   background-color: #FFFFFF; }
   .sideBar a {
@@ -2322,7 +2323,7 @@ _:future,
   list-style-type: none; }
 
 .sideBar--scrollSpyActive {
-  border-left: 3px solid #EA1B64; }
+  color: #EA1B64; }
 
 main {
   width: 75%;
