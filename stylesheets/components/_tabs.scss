@@ -27,7 +27,7 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border:1px solid $altColor;
-  border-bottom: none;
+  margin-right:2px;
   &:nth-child(2){
     background-color:$baseColorAlt;
     padding:15px;
@@ -101,9 +101,12 @@
 
 
 .tabGroup{
+  align-items:flex-end;
   position:absolute;
+  display:flex;
   top:-12px;
   left:-15px;
+  width:100%;
   @include componentBoxMed;
   & > label[class="tabs__tab"]:nth-child(0){
     margin:-1px;

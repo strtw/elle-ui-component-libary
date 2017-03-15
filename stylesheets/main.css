@@ -25,7 +25,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin: 20px;
   padding: 10px;
-  transition: 0.2s background-color; }
+  transition: 0.2s background-color;
+  white-space: nowrap; }
 
 .actionCard, .contactCard, .teaserCard {
   border: 1px solid #BDBDBD;
@@ -1538,7 +1539,7 @@ progress[value]::-moz-progress-bar {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border: 1px solid #BDBDBD;
-  border-bottom: none; }
+  margin-right: 2px; }
   .tabs__tab:nth-child(2) {
     background-color: #CF477C;
     padding: 15px; }
@@ -1597,9 +1598,12 @@ progress[value]::-moz-progress-bar {
   left: 100px; }
 
 .tabGroup {
+  align-items: flex-end;
   position: absolute;
+  display: flex;
   top: -12px;
   left: -15px;
+  width: 100%;
   margin: 10px;
   padding: 5px; }
   .tabGroup > label[class="tabs__tab"]:nth-child(0) {
