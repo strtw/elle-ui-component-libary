@@ -2,9 +2,15 @@
 	@include componentBoxLarge();
 	width: 100%;
 	display: flex;
+	flex-flow: column wrap;
 	justify-content: space-between;
-	align-items: flex-end;
+	font-size: 0.7em;
 	border-bottom: 3px solid $baseColorMed;
+	@media only screen and (min-width: 600px){
+		flex-flow: row wrap;
+			align-items: flex-end;
+			font-size: inherit;
+	}
 }
 
 .headerBar__logo > img{

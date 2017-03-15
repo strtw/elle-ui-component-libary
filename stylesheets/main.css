@@ -6,9 +6,12 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   max-width: 1600px; }
+  @media only screen and (min-width: 800px) {
+    body {
+      width: 100%; } }
 
 main {
   margin: 20px;
@@ -348,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
 .componentSection_markupSwitch:checked + .componentContainer__markup {
   height: auto;
   overflow-x: scroll;
-  padding: 10px; }
+  padding: 0 40px; }
 
 .componentSection_markupSwitch {
   display: none; }
@@ -359,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 0;
   padding: 0;
   margin: 0;
-  background-color: gray;
+  background-color: lightgray;
   color: white;
   overflow-x: scroll;
   transition: height 0.8s ease-in;
@@ -949,9 +952,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   width: 100%;
   display: flex;
+  flex-flow: column wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  font-size: 0.7em;
   border-bottom: 3px solid #EA1B64; }
+  @media only screen and (min-width: 600px) {
+    .headerBar {
+      flex-flow: row wrap;
+      align-items: flex-end;
+      font-size: inherit; } }
 
 .headerBar__logo > img {
   width: 70px; }
@@ -2224,6 +2233,79 @@ _:future,
 .slideCarousel .slideCarousel__switch:nth-of-type(2):checked ~ .slideCarousel__switchRight .slideCarousel__arrowRight:nth-of-type(3),
 .slideCarousel .slideCarousel__switch:nth-of-type(3):checked ~ .slideCarousel__switchRight .slideCarousel__arrowRight:nth-of-type(1) {
   display: inline; }
+
+.fan {
+  display: flex;
+  width: 200px;
+  flex-flow: column wrap;
+  height: 30px;
+  cursor: pointer;
+  margin: 20px 10px; }
+
+.fan__item {
+  text-align: right;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid #EF4381;
+  border-radius: 5px;
+  transform-origin: bottom left;
+  transform: rotate(0deg);
+  width: 30%;
+  transition: 0.7s transform ease-in;
+  z-index: 10; }
+
+.fan:hover > .fan__item:nth-of-type(1) {
+  transform: rotate(-20deg); }
+
+.fan:hover > .fan__item:nth-of-type(2) {
+  transform: rotate(-15deg); }
+
+.fan:hover > .fan__item:nth-of-type(3) {
+  transform: rotate(-10deg); }
+
+.fan:hover > .fan__item:nth-of-type(4) {
+  transform: rotate(-5deg); }
+
+.fan:hover > .fan__item:nth-of-type(5) {
+  transform: rotate(0deg); }
+
+.fan:hover > .fan__item:nth-of-type(6) {
+  transform: rotate(5deg); }
+
+.fan:hover > .fan__item:nth-of-type(7) {
+  transform: rotate(10deg); }
+
+.fan:hover > .fan__item:nth-of-type(8) {
+  transform: rotate(15deg); }
+
+.fan:hover > .fan__item:nth-of-type(9) {
+  transform: rotate(20deg) rotateX(-90deg); }
+
+.linearClock {
+  width: 600px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid none;
+  margin: 20px 10px; }
+
+.linearClock__hourMark {
+  width: 20px;
+  border: 1px solid white;
+  text-align: center;
+  color: #202020; }
+
+.linearClock__timeIndicator {
+  width: 4px;
+  background-color: #C31F5D;
+  opacity: 0.5;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 14px; }
 
 .sideBar {
   position: sticky;
