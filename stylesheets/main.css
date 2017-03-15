@@ -40,7 +40,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .contactCard__image, .teaserCard__image {
   position: relative;
-  z-index: -1;
   max-width: 100%; }
 
 .actionCard__content, .teaserCard__content {
@@ -351,7 +350,9 @@ h1, h2, h3, h4, h5, h6 {
 .componentSection_markupSwitch:checked + .componentContainer__markup {
   height: auto;
   overflow-x: scroll;
-  padding: 0 40px; }
+  padding: 0 40px;
+  border: 2px solid #EA1B64;
+  background-color: snow; }
 
 .componentSection_markupSwitch {
   display: none; }
@@ -362,15 +363,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 0;
   padding: 0;
   margin: 0;
-  background-color: lightgray;
-  color: white;
+  color: black;
   overflow-x: scroll;
   transition: height 0.8s ease-in;
   border-radius: 10px;
   font-size: 1.1rem; }
 
 .componentContainer__markup > pre > code {
-  color: #FFFFFF;
+  color: black;
   font-size: 1.2rem; }
 
 .contactCard__profileImage {
@@ -2300,12 +2300,12 @@ _:future,
 
 .linearClock__timeIndicator {
   width: 4px;
-  background-color: #C31F5D;
+  background-color: #EF4381;
   opacity: 0.5;
-  height: 24px;
+  height: 40px;
   position: absolute;
   left: 0;
-  top: 14px; }
+  top: -10px; }
 
 .sideBar {
   position: sticky;
