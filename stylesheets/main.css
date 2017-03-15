@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700");
 * {
   box-sizing: border-box;
-  color: #202020; }
+  color: #3a3a3a; }
 
 body {
+  background-color: #fcfcfc;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   width: 100%;
@@ -2318,7 +2319,7 @@ _:future,
   height: 100vh;
   margin: 0 20px 20px 20px;
   overflow-y: scroll;
-  background-color: #FFFFFF; }
+  background-color: #fcfcfc; }
   .sideBar a {
     text-decoration: none; }
 
