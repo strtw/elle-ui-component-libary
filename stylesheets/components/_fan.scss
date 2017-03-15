@@ -1,0 +1,35 @@
+
+.fan{
+  display:flex;
+  width: 200px;
+  flex-flow: column wrap;
+  height: 30px;
+  cursor: pointer;
+  margin: 20px 10px;
+}
+
+.fan__item{
+  text-align: right;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid $baseColorLight;
+  border-radius: 5px;
+  transform-origin: bottom left;
+  transform: rotate(0deg);
+  width: 30%;
+  transition: 0.7s transform ease-in;
+  z-index: 10;
+}
+
+.fan:hover > .fan__item:nth-of-type(1){ transform: rotate(-20deg);}
+.fan:hover > .fan__item:nth-of-type(2){ transform: rotate(-15deg);}
+.fan:hover > .fan__item:nth-of-type(3){ transform: rotate(-10deg);}
+.fan:hover > .fan__item:nth-of-type(4){ transform: rotate(-5deg);}
+.fan:hover > .fan__item:nth-of-type(5){ transform: rotate(0deg); }
+.fan:hover > .fan__item:nth-of-type(6){ transform: rotate(5deg);}
+.fan:hover > .fan__item:nth-of-type(7){ transform: rotate(10deg);}
+.fan:hover > .fan__item:nth-of-type(8){ transform: rotate(15deg);}
+.fan:hover > .fan__item:nth-of-type(9){ transform: rotate(20deg) rotateX(-90deg);}
