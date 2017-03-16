@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   width: 100%;
   margin: 0 auto;
-  max-width: 1600px; }
+  max-width: 1800px; }
   @media only screen and (min-width: 800px) {
     body {
       width: 100%; } }
@@ -487,7 +487,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .searchBar--withSearchIndication {
   height: 150px;
-  margin: 20px inherit; }
+  margin: 20px inherit;
+  z-index: 10; }
 
 .searchBar__searchingToggle {
   display: none; }
@@ -533,7 +534,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100px;
   width: 5px;
   background-color: #EF4381;
-  top: 25px;
+  top: 40px;
   z-index: -5; }
 
 .searchBar__searchingBars:nth-of-type(1) {
@@ -607,16 +608,16 @@ h1, h2, h3, h4, h5, h6 {
   50% {
     top: 0px; }
   75% {
-    top: 30px; }
+    top: 40px; }
   100% {
     top: 0px; } }
 @keyframes bobbleB {
   0% {
     top: 0px; }
   40% {
-    top: -20px; }
+    top: -10px; }
   70% {
-    top: 20px; }
+    top: 30px; }
   100% {
     top: 0px; } }
 @keyframes bobbleC {
@@ -1156,7 +1157,8 @@ progress[value]::-moz-progress-bar {
 
 .searchBar--withSearchIndication {
   height: 150px;
-  margin: 20px inherit; }
+  margin: 20px inherit;
+  z-index: 10; }
 
 .searchBar__searchingToggle {
   display: none; }
@@ -1202,7 +1204,7 @@ progress[value]::-moz-progress-bar {
   height: 100px;
   width: 5px;
   background-color: #EF4381;
-  top: 25px;
+  top: 40px;
   z-index: -5; }
 
 .searchBar__searchingBars:nth-of-type(1) {
@@ -1276,16 +1278,16 @@ progress[value]::-moz-progress-bar {
   50% {
     top: 0px; }
   75% {
-    top: 30px; }
+    top: 40px; }
   100% {
     top: 0px; } }
 @keyframes bobbleB {
   0% {
     top: 0px; }
   40% {
-    top: -20px; }
+    top: -10px; }
   70% {
-    top: 20px; }
+    top: 30px; }
   100% {
     top: 0px; } }
 @keyframes bobbleC {
@@ -1327,7 +1329,8 @@ progress[value]::-moz-progress-bar {
   display: inline-block;
   padding: 10px;
   transition: transform 0.4s ease-in;
-  vertical-align: center; }
+  vertical-align: center;
+  z-index: 10; }
 
 .zoomupDef__content {
   background-color: #FFFFFF;
@@ -2258,7 +2261,7 @@ _:future,
   transform-origin: bottom left;
   transform: rotate(0deg);
   width: 30%;
-  transition: 0.7s transform ease-in;
+  transition: 0.5s transform ease-in;
   z-index: 10; }
 
 .fan:hover > .fan__item:nth-of-type(1) {
@@ -2310,6 +2313,64 @@ _:future,
   position: absolute;
   left: 0;
   top: -10px; }
+
+.swingMenu {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  z-index: 5;
+  margin: 0 0 300px 0;
+  color: #EF4381; }
+
+.swingMenu__title {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #EF4381;
+  display: block;
+  padding: 3px;
+  position: relative;
+  text-align: center;
+  transform-origin: 0 0;
+  transition: 0.4s transform ease-in;
+  width: 100%;
+  z-index: 5;
+  color: #EF4381; }
+
+.swingMenu:hover > .swingMenu__title {
+  transform: rotateZ(90deg); }
+
+.swingMenu__menu {
+  transform: perspective(200px) rotateY(90deg);
+  left: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  transform-origin: 0 50%;
+  transition: transform 0.4s ease-out;
+  width: 100%;
+  z-index: 4; }
+
+.swingMenu__menu > li {
+  border-radius: 5px;
+  color: #EF4381;
+  border: 2px solid #EF4381;
+  display: block;
+  margin: 2px;
+  padding: 3px;
+  text-align: left;
+  width: 100%;
+  background-color: white; }
+
+.swingMenu__menu > li:hover {
+  background-color: #EF4381;
+  color: white; }
+
+.swingMenu:hover > .swingMenu__title ~ .swingMenu__menu {
+  transform: rotateY(1deg);
+  transition-delay: 0.05s;
+  transition-delay: 0;
+  transition: transform 0.4s ease-in; }
 
 .sideBar {
   position: sticky;

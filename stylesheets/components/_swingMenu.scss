@@ -5,7 +5,7 @@
   width: 300px;
   z-index: 5;
   margin: 0 0 300px 0;
-  color: $defaultColor;
+  color: $baseColorLight;
 }
 
 .swingMenu__title{
@@ -20,6 +20,7 @@
   transition: 0.4s transform ease-in;
   width: 100%;
   z-index: 5;
+    color: $baseColorLight;
 }
 
 .swingMenu:hover > .swingMenu__title{
@@ -39,6 +40,7 @@
 
 .swingMenu__menu > li {
   border-radius: 5px;
+    color: $baseColorLight;
   border: 2px solid $baseColorLight;;
   display: block;
   margin: 2px;
@@ -48,7 +50,7 @@
   background-color: white;
 }
 .swingMenu__menu > li:hover{
-  background-color: black;
+  background-color: $baseColorLight;
   color: white;
 }
 
