@@ -1,0 +1,60 @@
+.swingMenu{
+  cursor: pointer;
+  display: inline-block; 
+  position: relative;
+  width: 300px;
+  z-index: 5;
+  margin: 0 0 300px 0;
+  color: $defaultColor;
+}
+
+.swingMenu__title{
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid $baseColorLight;;
+  display: block;
+  padding: 3px;
+  position: relative;
+  text-align: center;
+  transform-origin: 0 0;
+  transition: 0.4s transform ease-in;
+  width: 100%;
+  z-index: 5;
+}
+
+.swingMenu:hover > .swingMenu__title{
+    transform: rotateZ(90deg);
+}
+.swingMenu__menu{
+  transform: perspective(200px) rotateY(90deg);
+  left: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  transform-origin: 0 50% ;
+  transition: transform 0.4s ease-out;
+  width: 100%;
+  z-index: 4;
+}
+
+.swingMenu__menu > li {
+  border-radius: 5px;
+  border: 2px solid $baseColorLight;;
+  display: block;
+  margin: 2px;
+  padding: 3px;
+  text-align: left;
+  width: 100%;
+  background-color: white;
+}
+.swingMenu__menu > li:hover{
+  background-color: black;
+  color: white;
+}
+
+.swingMenu:hover > .swingMenu__title ~ .swingMenu__menu{
+  transform: rotateY(1deg);
+  transition-delay: 0.05s;
+  transition-delay: 0;
+  transition: transform 0.4s ease-in;
+}
