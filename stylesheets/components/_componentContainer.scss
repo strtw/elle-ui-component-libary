@@ -24,6 +24,8 @@
 	height: auto;
  	overflow-x: scroll;
  	padding:0 40px;
+ 		border: 2px solid $baseColorMed;
+ 		 	background-color: snow;
 
 }
 
@@ -36,18 +38,17 @@
 	height: 0;
 	padding: 0;
 	margin: 0;
-
- 	background-color: lightgray;
- 	color: white;
+ 	color: black;
  	overflow-x: scroll;
  	transition: height 0.8s ease-in;
  	border-radius: 10px;
  	font-size: 1.1rem;
+
 }
 
 
 
 .componentContainer__markup > pre > code{
-	 	color: $invertDefaultColor;
+	 	color: black;
 	 	font-size: 1.2rem;
 }

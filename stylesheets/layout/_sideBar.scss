@@ -6,8 +6,9 @@
   width:25%;
   top:0px;
   height:100vh;
+  margin: 0 20px 20px 20px;
   overflow-y:scroll;
-  background-color: $invertDefaultColor;
+  background-color: #fcfcfc;
   & a{
     @include lovehate($self:true);
   }
@@ -18,7 +19,7 @@
 }
 
 .sideBar--scrollSpyActive{
-  border-left: 3px solid $baseColorMed;
+  color:$baseColorMed;
 }
 
 main{

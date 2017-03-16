@@ -20,14 +20,14 @@
             offsetHeight = dataItems[j].offsetHeight;
             if (dataItems[j].getBoundingClientRect().top <= 15 && dataItems[j].getBoundingClientRect().top <= offsetHeight) {
                 for (i = 0; i < navLinks.length; i++) {
-                    if(navHeaders[i].classList.contains('sideBar--scrollSpyActive')){
-                        navHeaders[i].classList.remove('sideBar--scrollSpyActive');
+                    if(navLinks[i].classList.contains('sideBar--scrollSpyActive')){
+                        navLinks[i].classList.remove('sideBar--scrollSpyActive');
                     }
                     navLinkHash = navLinks[i].hash;
                     if (navLinkHash != "") {
                         dataItemId = dataItems[j].getAttribute("id");
                         if (navLinks[i].hash == "#" + dataItemId && classCount < 1) {
-                        navHeaders[i].classList.add('sideBar--scrollSpyActive');
+                        navLinks[i].classList.add('sideBar--scrollSpyActive');
                         }
                     }
                 }

@@ -19,62 +19,53 @@
 - [7-1 Project Style](https://github.com/HugoGiraudel/sass-boilerplate)
 
 ## Components Designed (20+)
+
 - Main Site [All]
-- Basic - Color Pallete [Brian]
-- Basic - Typography [Brian]
+- Color Pallete [Brian]
+- Typography [All]
+- Grid Layout [Brian]
 - Buttons - Basic Buttons [Stu]
 - Buttons - Rounded Buttons [Stu]
 - Buttons - Button Groups [Stu]
-- Input/Output - Checkbox/Radio [Rafael] 
-- Input/Output - Progress Bar [Rafael]
-- Input/Output - Toggle [Rafael]
-- Input/Output - Basic Search Bar [Brian]
-- Form - Contact [Stu]
-- Form - Sign Up [Stu]
 - Card - Teaser [Stu]
 - Card - Contact [Stu]
 - Card - Call to Action [Stu]
-- Component - AccordionA [PJ]
-- Component - AccordionB [PJ]
-- Component - AccordionC [PJ]
-- Component - Carousel [Brian]
-- Navigation - NavBar [Brian]
-- Navigation - SideNav [Rafael]
-- Layout - Header/Footer [Brian]
-- Innovative - Search w/ Loading Indicator [Brian]
-- Innovative - Definition Zoom [Brian]
-- Innovative - Search w/ Long Edit [Stu]
-- Innovative - Readability Improvement Panel [Rafael] 
+- Tabs Displays [Stu]
+- Carousels [Brian]
+- Accordion - A [PJ]
+- Accordion - B [PJ]
+- Accordion - C [PJ]
+- Header/Footer - [Brian]
+- Basic Nav List [Brian]
+- Radio/Checkbox [Rafael] 
+- Pagination [Rafael]
+- Form - Contact [Stu]
+- Form - Sign Up [Stu]
+- Basic Search Bar [Brian]
+- Search w/ Long Edit [Stu][Innovative] 
+- Search w/ Loading Indicator [Brian][Innovative] 
+- Progress Bar [Brian]
+- Toggles [Rafael]
+- Modal [Stu]
+- SideNav [Rafael]
+- Lists [Rafael]
+- Tables [Rafael]
+- Readability Improvement Panel [Rafael][Innovative] 
+- Linear Clock [Brian]
+- Definition Zoom [Brian]
+- Swing Menu [Brian][Innovative] 
+- Fan Display [Brian][Innovative] 
+- Scrollspy [Stu]
+
 
 
 ## To Do 
-###Primary (** denotes complete)
-- 12-Column Grid [Brian]
-- ** Lists: [Rafael]Show different styles of ordered and unordered lists
-- ** Tables [Rafael]
-- Modals [STU] (One done)
-- Scrollspy [STU]
-- ** Tabs: [STU] Develop at least three types of tabs
-- Accordion: Make accordion opens and closes gracefully [PJ]
-- Carousels:[Brian] Develop at least three types of Carousels.
-- Pagination 
+- [PJ], [Ruben]: Create innovative UI element. 
 
---[PJ], [Ruben]: Create innovative UI element. 
-
-###Secondary
-- Finish Main Site Nav
-- Responsiveness
 
 --- 
 
 ### Other Ideas
-- Lists
-- Jumbotron
-- Social Media Buttons
-- Code
-- Article 
-- Index
-- NavBar
 
 ### For more ideas see:
 - [Bootstrap Components](http://getbootstrap.com/components/)
