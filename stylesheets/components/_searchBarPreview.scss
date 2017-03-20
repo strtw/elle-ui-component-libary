@@ -16,11 +16,15 @@
   font-family: $fontMono !important;
 }
 
-.searchBar__searchEditorControl{
-  display:none;
+/*.searchBar__searchEditorControl{
+  //visibility: hidden;
   &:checked + .searchBar__searchEditor{
     display:block;
   }
+}*/
+
+.searchBar__searchEditorControlLabel{
+  visibility: hidden;
 }
 
 .searchBar__expand{

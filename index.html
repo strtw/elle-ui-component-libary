@@ -957,8 +957,10 @@
                 </p>
                 <div class="componentSection__componentContainer">
                     <div class="componentContainer__display">
-                        <div class="searchBar">
-                            <label for="searchBar__searchEditorControl"><i class="fa fa-expand searchBar__expand" aria-hidden="true" id="searchBar__expand"></i></label>
+                        <div class="searchBar" id="searchBar--longSearchEditor">
+                            <label for="searchBar__searchEditorControl"
+                                   class="searchBar__searchEditorControlLabel" id="searchBar__searchEditorControlLabel"><i
+                                    class="fa fa-expand searchBar__expand" aria-hidden="true" id="searchBar__expand"></i></label>
                             <input class="searchBar__searchInput searchBar__searchInput--longSearchInput"
                                    id="searchBar__searchInput" type="text"
                                    name="" placeholder="Search">
@@ -966,8 +968,11 @@
                                 <i class="fa fa-search"></i> Search
                             </div>
                             <input class="searchBar__searchEditorControl" type="checkbox" id="searchBar__searchEditorControl">
-                            <div class="searchBar__searchEditor" id="searchBar__searchEditor" contenteditable="true" placeholder="Edit long search strings here"></div>
-                        </div>
+                            <div class="searchBar__searchEditor"
+                                 id="searchBar__searchEditor"
+                                 contenteditable="true"
+                                 tabindex="0"
+                                 placeholder="Edit long search strings here"></div>
                     </div>
                     <br>
                     <br>

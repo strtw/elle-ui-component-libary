@@ -645,10 +645,14 @@ h1, h2, h3, h4, h5, h6 {
 .searchBar__searchInput--longSearchInput {
   font-family: "Roboto Mono", monospace !important; }
 
-.searchBar__searchEditorControl {
-  display: none; }
-  .searchBar__searchEditorControl:checked + .searchBar__searchEditor {
-    display: block; }
+/*.searchBar__searchEditorControl{
+  //visibility: hidden;
+  &:checked + .searchBar__searchEditor{
+    display:block;
+  }
+}*/
+.searchBar__searchEditorControlLabel {
+  visibility: hidden; }
 
 .searchBar__expand {
   visibility: hidden;
