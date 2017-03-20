@@ -1,14 +1,19 @@
 .searchBar__searchEditor{
-  //width:227px;
+  min-width:100px;
   background-color:$invertDefaultColor;
   border:1px solid $altColor;
   border-radius: $borderRoundedSoft;
+  font-family: $fontMono;
   left:15px;
   padding:10px;
   position:absolute;
   top:43px;
   display:none;
   max-width:400px;
+}
+
+.searchBar__searchInput--longSearchInput{
+  font-family: $fontMono !important;
 }
 
 .searchBar__searchEditorControl{
@@ -19,7 +24,7 @@
 }
 
 .searchBar__expand{
-  opacity:0;
+  visibility: hidden;
   color:$baseColorLight;
   margin-right:3px;
   padding:0;

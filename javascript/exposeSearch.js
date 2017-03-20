@@ -2,6 +2,14 @@
  * Created by stu on 2/26/17.
  */
 
+//todo Show the expanded editor as soon as texts begin to hide in the textfield.
+
+//todo Hide the expanded editor when the user clicks outside the element or --add little close icon on the upper right of the expanded editor.
+
+//todo Write concise and clear instructions about how to use your element,include information about any known bugs or incompatibilities.
+
+//todo When we are ready to add your innovative element to the collective UIframework, change your element’s color scheme to match the collective UI framework color scheme. We will announce the collective UI’s color scheme in a few days.
+
 
 window.onload = function(){
 
@@ -18,29 +26,34 @@ window.onload = function(){
             searchInput.value = editorField.innerHTML;
         },
         expandIconCheck:function(){
-            var size = searchInput.getAttribute("size");
-            var searchString = searchInput.value.length;
-            if(searchString > size){
-                expandIcon.style.opacity = 1;
+            var searchBoxWidth = searchInput.clientWidth;
+            if(exposeSearch.getInputPixelWidth(searchInput) >= searchBoxWidth){
+                expandIcon.style.visibility = "visible";
             }else{
-                expandIcon.style.opacity = 0;
+                expandIcon.style.visibility = "hidden";
 
             }
-    }
+        },
+        getInputPixelWidth:function(elem){
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext("2d");
+            var style = window.getComputedStyle(elem, null);
+            var fontSize = style.getPropertyValue('font-size');
+            var fontFamily = style.getPropertyValue('font-family');
+            var fontWeight = style.getPropertyValue('font-weight');
+            ctx.font = fontWeight + " " + fontSize + " " + fontFamily ;
+            var width = ctx.measureText(searchInput.value).width;
+            return width;
+        }
     }
 
-    searchInput.addEventListener("keyup",function checkBoxTest(){
-        //if(checkBox.checked /*&& searchInput.value.length > 0*/){
-            exposeSearch.placeInEditor();
-       // }
+    editorField.addEventListener("keyup",function(){
+        exposeSearch.expandIconCheck();
+        exposeSearch.editorToSearch();
     });
-
-    editorField.addEventListener("keyup",exposeSearch.editorToSearch);
 
     searchInput.addEventListener("keyup",function(){
         exposeSearch.expandIconCheck();
         exposeSearch.placeInEditor();
-
     });
-
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700|Roboto+Mono");
 * {
   box-sizing: border-box;
   color: #3a3a3a; }
@@ -629,9 +629,11 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     top: 0px; } }
 .searchBar__searchEditor {
+  min-width: 100px;
   background-color: #FFFFFF;
   border: 1px solid #BDBDBD;
   border-radius: 3px;
+  font-family: "Roboto Mono", monospace;
   left: 15px;
   padding: 10px;
   position: absolute;
@@ -639,13 +641,16 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   max-width: 400px; }
 
+.searchBar__searchInput--longSearchInput {
+  font-family: "Roboto Mono", monospace !important; }
+
 .searchBar__searchEditorControl {
   display: none; }
   .searchBar__searchEditorControl:checked + .searchBar__searchEditor {
     display: block; }
 
 .searchBar__expand {
-  opacity: 0;
+  visibility: hidden;
   color: #EF4381;
   margin-right: 3px;
   padding: 0; }
