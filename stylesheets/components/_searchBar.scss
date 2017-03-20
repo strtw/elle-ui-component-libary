@@ -10,6 +10,7 @@
 .searchBar--withSearchIndication{
   height: 150px;
   margin: 20px inherit;
+  z-index: 10;
 }
 
 .searchBar__searchingToggle{
@@ -63,7 +64,7 @@
   height: 100px;
   width: 5px;
   background-color: $baseColorLight;
-  top: 25px;
+  top: 40px;
   z-index: -5;
 }
 
@@ -104,7 +105,8 @@
 
 @keyframes bobbleA {
   0% {
-    top: 0px; 
+    top: 0px;
+     
   }
   25% {
     top: -30px; 
@@ -113,7 +115,7 @@
     top: 0px; 
   } 
   75% {
-    top: 30px; 
+    top: 40px; 
   } 
   100%{
     top: 0px; 
@@ -127,10 +129,10 @@
     top: 0px; 
   }
   40%{
-    top:-20px;
+    top:-10px;
   }
   70% {
-    top: 20px; 
+    top: 30px; 
   } 
   100%{
     top: 0px; 
