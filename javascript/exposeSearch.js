@@ -14,7 +14,6 @@ window.onload = function() {
     var searchInput = document.getElementById("searchBar__searchInput");
     var editorField = document.getElementById("searchBar__searchEditor");
     var checkBoxLabel = document.getElementById("searchBar__searchEditorControlLabel");
-    var checkBox = document.getElementById("searchBar__searchEditorControl");
     var expandIcon = document.getElementById("searchBar__expand");
     var searchBoxWidth = searchInput.clientWidth;
 
