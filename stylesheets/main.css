@@ -641,7 +641,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 43px;
   display: none;
   max-width: 400px;
-  z-index: 100; }
+  z-index: 100;
+  outline: none; }
 
 .searchBar__searchInput--longSearchInput {
   font-family: "Roboto Mono", monospace !important; }

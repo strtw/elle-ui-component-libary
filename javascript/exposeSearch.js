@@ -10,7 +10,6 @@
 
 
 window.onload = function() {
-    var longSearchEditor = document.getElementById("searchBar--longSearchEditor");
     var searchInput = document.getElementById("searchBar__searchInput");
     var editorField = document.getElementById("searchBar__searchEditor");
     var checkBoxLabel = document.getElementById("searchBar__searchEditorControlLabel");
@@ -41,39 +40,52 @@ window.onload = function() {
             ctx.font = fontWeight + " " + fontSize + " " + fontFamily;
             var width = ctx.measureText(searchInput.value).width;
             return width;
+        },
+        hideEditorWhenInputVisible: function() {
+            if(editorField.style.display === "block"){
+                if (exposeSearch.getInputPixelWidth(searchInput) < searchBoxWidth) {
+                    editorField.style.display = "none";
+                }
+            }
+        },
+        toggleEditor: function(){
+            if(editorField.style.display === "" || editorField.style.display === "none"){
+                editorField.style.display = "block";
+                editorField.focus();
+            }else if(editorField.style.display === "block"){
+                editorField.style.display = "none";
+            }
+        },
+        toggleEditorShortCut: function (){
+            if (event.keyCode === 17){
+                exposeSearch.toggleEditor();
+            }
+        },
+        handleKeyPress: function (){
+            exposeSearch.expandIconCheck();
+            exposeSearch.hideEditorWhenInputVisible();
+            exposeSearch.toggleEditorShortCut();
+            if(this === searchInput) {
+                exposeSearch.placeInEditor();
+            }else {
+                exposeSearch.editorToSearch();
+            }
         }
     };
 
-
-    function hideEditorWhenInputVisible(){
-        if(editorField.style.display === "block"){
-            if (exposeSearch.getInputPixelWidth(searchInput) < searchBoxWidth) {
-                editorField.style.display = "none";
-            }
-        }
-
-    }
-
     editorField.addEventListener("keyup",function(){
-        exposeSearch.expandIconCheck();
-        exposeSearch.editorToSearch();
-        hideEditorWhenInputVisible()
+        var bound = exposeSearch.handleKeyPress.bind(editorField);
+        bound();
     });
 
     searchInput.addEventListener("keyup",function(){
-        exposeSearch.expandIconCheck();
-        exposeSearch.placeInEditor();
-        hideEditorWhenInputVisible()
+        var bound = exposeSearch.handleKeyPress.bind(searchInput);
+        bound();
     });
 
     checkBoxLabel.addEventListener("mousedown",function(event){
         event.preventDefault();
-       if(editorField.style.display === "" || editorField.style.display === "none"){
-           editorField.style.display = "block";
-           editorField.focus();
-       }else if(editorField.style.display === "block"){
-           editorField.style.display = "none";
-       }
+        exposeSearch.toggleEditor();
 
     });
 
