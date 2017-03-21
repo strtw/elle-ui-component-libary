@@ -2,13 +2,12 @@
  * Created by stu on 2/26/17.
  */
 
-//todo Hide the expanded editor when the user clicks outside the element or --add little close icon on the upper right of the expanded editor.
-
 //todo Write concise and clear instructions about how to use your element,include information about any known bugs or incompatibilities.
 
 //todo When we are ready to add your innovative element to the collective UIframework, change your element’s color scheme to match the collective UI framework color scheme. We will announce the collective UI’s color scheme in a few days.
 //fixme trying to close editor with icon doesn't work after adding text 2editor
-//fixme deleting all text from editor keeps icon visibile
+//fixme space bar in editor adds escaped characters to the search bar
+
 
 window.onload = function() {
     var longSearchEditor = document.getElementById("searchBar--longSearchEditor");
@@ -21,10 +20,10 @@ window.onload = function() {
 
     var exposeSearch = {
         placeInEditor: function () {
-            editorField.innerHTML = searchInput.value;
+            editorField.innerText = searchInput.value;
         },
         editorToSearch: function () {
-            searchInput.value = editorField.innerHTML;
+            searchInput.value = editorField.innerText;
         },
         expandIconCheck: function () {
             if (exposeSearch.getInputPixelWidth(searchInput) >= searchBoxWidth) {
@@ -68,31 +67,20 @@ window.onload = function() {
         hideEditorWhenInputVisible()
     });
 
-    /*checkBox.addEventListener("click",function(e){
-        if (e.target.checked === false) {
-            editorField.style.display = "none";
-            searchInput.focus();
-            console.log(false);
-        }else{
-            e.target.checked = true;
-            editorField.style.display = "block";
-            editorField.focus();
-            console.log(true);
-        }
-    });*/
-
-    checkBox.addEventListener("click",function(){
+    checkBoxLabel.addEventListener("mousedown",function(event){
+        event.preventDefault();
        if(editorField.style.display === "" || editorField.style.display === "none"){
            editorField.style.display = "block";
-           //editorField.focus();
+           editorField.focus();
        }else if(editorField.style.display === "block"){
            editorField.style.display = "none";
-          // editorField.blur();
        }
+
     });
 
   editorField.addEventListener("blur",function(){
         editorField.style.display = "none";
-        searchInput.focus()
+        exposeSearch.expandIconCheck();
+        searchInput.focus();
     });
 };
