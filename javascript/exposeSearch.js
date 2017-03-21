@@ -7,7 +7,8 @@
 //todo Write concise and clear instructions about how to use your element,include information about any known bugs or incompatibilities.
 
 //todo When we are ready to add your innovative element to the collective UIframework, change your element’s color scheme to match the collective UI framework color scheme. We will announce the collective UI’s color scheme in a few days.
-
+//fixme trying to close editor with icon doesn't work after adding text 2editor
+//fixme deleting all text from editor keeps icon visibile
 
 window.onload = function() {
     var longSearchEditor = document.getElementById("searchBar--longSearchEditor");
@@ -16,6 +17,7 @@ window.onload = function() {
     var checkBoxLabel = document.getElementById("searchBar__searchEditorControlLabel");
     var checkBox = document.getElementById("searchBar__searchEditorControl");
     var expandIcon = document.getElementById("searchBar__expand");
+    var searchBoxWidth = searchInput.clientWidth;
 
     var exposeSearch = {
         placeInEditor: function () {
@@ -25,12 +27,10 @@ window.onload = function() {
             searchInput.value = editorField.innerHTML;
         },
         expandIconCheck: function () {
-            var searchBoxWidth = searchInput.clientWidth;
             if (exposeSearch.getInputPixelWidth(searchInput) >= searchBoxWidth) {
                 expandIcon.style.visibility = "visible";
             } else {
                 expandIcon.style.visibility = "hidden";
-
             }
         },
         getInputPixelWidth: function (elem) {
@@ -47,19 +47,28 @@ window.onload = function() {
     };
 
 
+    function hideEditorWhenInputVisible(){
+        if(editorField.style.display === "block"){
+            if (exposeSearch.getInputPixelWidth(searchInput) < searchBoxWidth) {
+                editorField.style.display = "none";
+            }
+        }
 
+    }
 
     editorField.addEventListener("keyup",function(){
         exposeSearch.expandIconCheck();
         exposeSearch.editorToSearch();
+        hideEditorWhenInputVisible()
     });
 
     searchInput.addEventListener("keyup",function(){
         exposeSearch.expandIconCheck();
         exposeSearch.placeInEditor();
+        hideEditorWhenInputVisible()
     });
 
-    longSearchEditor.addEventListener("change",function(e){
+    /*checkBox.addEventListener("click",function(e){
         if (e.target.checked === false) {
             editorField.style.display = "none";
             searchInput.focus();
@@ -70,10 +79,20 @@ window.onload = function() {
             editorField.focus();
             console.log(true);
         }
+    });*/
+
+    checkBox.addEventListener("click",function(){
+       if(editorField.style.display === "" || editorField.style.display === "none"){
+           editorField.style.display = "block";
+           //editorField.focus();
+       }else if(editorField.style.display === "block"){
+           editorField.style.display = "none";
+          // editorField.blur();
+       }
     });
 
-    editorField.addEventListener("blur",function(){
+  editorField.addEventListener("blur",function(){
         editorField.style.display = "none";
-        checkBox.checked = false;
-    })
+        searchInput.focus()
+    });
 };
