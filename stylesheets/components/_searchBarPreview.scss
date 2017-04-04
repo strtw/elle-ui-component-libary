@@ -1,17 +1,18 @@
 .searchBar__searchEditor{
-  min-width:300px;
   background-color:$invertDefaultColor;
   border:1px solid $altColor;
   border-radius: $borderRoundedSoft;
+  display:none;
   font-family: $fontMono;
   left:15px;
+  //font-size:1em;
+  max-width:400px;
+  min-width:300px;
+  outline:none;
   padding:10px;
   position:absolute;
   top:43px;
-  display:none;
-  max-width:400px;
   z-index:100;
-  outline:none;
 }
 
 .searchBar__searchInput--longSearchInput{
@@ -30,9 +31,9 @@
 }
 
 .searchBar__expand{
-  visibility: hidden;
   color:$baseColorLight;
   margin-right:3px;
   padding:0;
+  visibility: hidden;
 }
 

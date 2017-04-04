@@ -10,11 +10,14 @@
 
 
 window.onload = function() {
-    var searchInput = document.getElementById("searchBar__searchInput");
+    var searchInput = document.getElementById("searchBar__searchInput")
     var editorField = document.getElementById("searchBar__searchEditor");
     var checkBoxLabel = document.getElementById("searchBar__searchEditorControlLabel");
     var expandIcon = document.getElementById("searchBar__expand");
-    var searchBoxWidth = searchInput.clientWidth;
+    if(searchInput != null){
+        var searchBoxWidth = searchInput.clientWidth;
+    }
+
 
     var exposeSearch = {
         placeInEditor: function () {
@@ -73,6 +76,9 @@ window.onload = function() {
         }
     };
 
+    if(searchInput != null){ //Prevents code from running if component
+        // doesn't exist in html
+
     editorField.addEventListener("keyup",function(){
         var bound = exposeSearch.handleKeyPress.bind(editorField);
         bound();
@@ -94,4 +100,5 @@ window.onload = function() {
         exposeSearch.expandIconCheck();
         searchInput.focus();
     });
+    }
 };

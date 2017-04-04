@@ -630,19 +630,19 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     top: 0px; } }
 .searchBar__searchEditor {
-  min-width: 300px;
   background-color: #FFFFFF;
   border: 1px solid #BDBDBD;
   border-radius: 3px;
+  display: none;
   font-family: "Roboto Mono", monospace;
   left: 15px;
+  max-width: 400px;
+  min-width: 300px;
+  outline: none;
   padding: 10px;
   position: absolute;
   top: 43px;
-  display: none;
-  max-width: 400px;
-  z-index: 100;
-  outline: none; }
+  z-index: 100; }
 
 .searchBar__searchInput--longSearchInput {
   font-family: "Roboto Mono", monospace !important; }
@@ -656,10 +656,10 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden; }
 
 .searchBar__expand {
-  visibility: hidden;
   color: #EF4381;
   margin-right: 3px;
-  padding: 0; }
+  padding: 0;
+  visibility: hidden; }
 
 /*************** FORM - CONTACT ***************/
 .formContact {
