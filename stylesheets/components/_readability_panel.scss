@@ -1,6 +1,6 @@
 /********** READABILITY PANEL **********/
-$accContainerColor: #d3d3d3;
 
+$accContainerColor: #d3d3d3;
 html {
   -webkit-transition: font-size .2s linear;
   font-size: 100%;
@@ -21,6 +21,15 @@ html {
   }
 }
 
+.accContainer .toggle {
+    padding: 0;
+    height: 35px;
+    width: 80px;
+    border: none;
+    position: relative;
+    overflow: visible;
+}
+
 .accToggle {
   border-right: 1px solid #FFF;
   display: inline-block;
@@ -39,6 +48,33 @@ html {
   top: 0;
 }
 
+.toggle__toolTip {
+  background-color: lightgray;
+  border-radius: 4px;
+  color: #484848;
+  content: "Invert Colors";
+  display: none;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: -110%;
+  white-space: nowrap;
+}
+
+.toggle__toolTip:after {
+  border-right: .75em solid transparent;
+  border-bottom: 0.75em solid lightgrey;
+  top: -.5em;
+  content: " ";
+  left: .25em;
+  position: absolute;
+  border-left: .75em solid transparent;
+}
+
+.toggle:hover .toggle__toolTip {
+  display: block;
+}
+
 .acc_Invert {
   -webkit-filter: invert(100%);
   filter: invert(100%);
@@ -55,18 +91,22 @@ html {
   transition: font-size .1s linear;
 }
 
-.acc_LargerFont .toggle__toggleInput + .toggle__label:after {
+.acc_LargerFont .toggle__toggleInput+.toggle__label:after {
   line-height: 0;
 }
 
-.acc_LargerFont .toggle__toggleInput:checked + .toggle__label:before {
+.acc_LargerFont .toggle__toggleInput:checked+.toggle__label:before {
   line-height: 0;
+}
+
+.accToggle .toggle__toggleInput:checked+.toggle__label--accLargerFont:after {
+  font-size: 0;
 }
 
 
 /* toggle icons */
 
-.accToggle .toggle__toggleInput:checked + .toggle__label--accInvert:before {
+.accToggle .toggle__toggleInput:checked+.toggle__label--accInvert:before {
   content: "\f042";
   font-family: "FontAwesome";
   font-size: 1.5em;
@@ -76,7 +116,7 @@ html {
   position: absolute;
 }
 
-.accToggle .toggle__toggleInput + .toggle__label--accInvert:after {
+.accToggle .toggle__toggleInput+.toggle__label--accInvert:after {
   content: "\f042";
   font-family: "FontAwesome";
   font-size: 1.5em;
@@ -86,7 +126,7 @@ html {
   position: absolute;
 }
 
-.accToggle .toggle__toggleInput:checked + .toggle__label--accGrayScale:before {
+.accToggle .toggle__toggleInput:checked+.toggle__label--accGrayScale:before {
   color: #fff;
   content: "\f26c";
   font-family: "FontAwesome";
@@ -94,7 +134,7 @@ html {
   line-height: 1.5em;
 }
 
-.accToggle .toggle__toggleInput + .toggle__label--accGrayScale:after {
+.accToggle .toggle__toggleInput+.toggle__label--accGrayScale:after {
   color: #EA1B64;
   content: "\f26c";
   font-family: "FontAwesome";
@@ -103,7 +143,7 @@ html {
   margin: 0 0 0 43px;
 }
 
-.accToggle .toggle__toggleInput:checked + .toggle__label--accLargerFont:before {
+.accToggle .toggle__toggleInput:checked+.toggle__label--accLargerFont:before {
   color: #fff;
   content: "\f031";
   font-family: "FontAwesome";
@@ -111,7 +151,7 @@ html {
   line-height: 1.1em;
 }
 
-.accToggle .toggle__toggleInput + .toggle__label--accLargerFont:after {
+.accToggle .toggle__toggleInput+.toggle__label--accLargerFont:after {
   color: #000;
   content: "\f031";
   font-family: "FontAwesome";

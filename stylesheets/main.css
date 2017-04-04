@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700|Roboto+Mono");
 * {
   box-sizing: border-box;
   color: #3a3a3a; }
@@ -633,23 +633,33 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFFFFF;
   border: 1px solid #BDBDBD;
   border-radius: 3px;
+  display: none;
+  font-family: "Roboto Mono", monospace;
   left: 15px;
+  max-width: 400px;
+  min-width: 300px;
+  outline: none;
   padding: 10px;
   position: absolute;
   top: 43px;
-  display: none;
-  max-width: 400px; }
+  z-index: 100; }
+
+.searchBar__searchInput--longSearchInput {
+  font-family: "Roboto Mono", monospace !important; }
 
 .searchBar__searchEditorControl {
-  display: none; }
+  visibility: hidden; }
   .searchBar__searchEditorControl:checked + .searchBar__searchEditor {
     display: block; }
 
+.searchBar__searchEditorControlLabel {
+  visibility: hidden; }
+
 .searchBar__expand {
-  opacity: 0;
   color: #EF4381;
   margin-right: 3px;
-  padding: 0; }
+  padding: 0;
+  visibility: hidden; }
 
 /*************** FORM - CONTACT ***************/
 .formContact {
@@ -1859,6 +1869,14 @@ html {
       margin: 0 auto;
       width: 85px; } }
 
+.accContainer .toggle {
+  padding: 0;
+  height: 35px;
+  width: 80px;
+  border: none;
+  position: relative;
+  overflow: visible; }
+
 .accToggle {
   border-right: 1px solid #FFF;
   display: inline-block;
@@ -1873,6 +1891,30 @@ html {
 .accToggle .toggle__label {
   position: absolute;
   top: 0; }
+
+.toggle__toolTip {
+  background-color: lightgray;
+  border-radius: 4px;
+  color: #484848;
+  content: "Invert Colors";
+  display: none;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: -110%;
+  white-space: nowrap; }
+
+.toggle__toolTip:after {
+  border-right: .75em solid transparent;
+  border-bottom: 0.75em solid lightgrey;
+  top: -.5em;
+  content: " ";
+  left: .25em;
+  position: absolute;
+  border-left: .75em solid transparent; }
+
+.toggle:hover .toggle__toolTip {
+  display: block; }
 
 .acc_Invert {
   -webkit-filter: invert(100%);
@@ -1892,6 +1934,9 @@ html {
 
 .acc_LargerFont .toggle__toggleInput:checked + .toggle__label:before {
   line-height: 0; }
+
+.accToggle .toggle__toggleInput:checked + .toggle__label--accLargerFont:after {
+  font-size: 0; }
 
 /* toggle icons */
 .accToggle .toggle__toggleInput:checked + .toggle__label--accInvert:before {

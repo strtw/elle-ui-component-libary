@@ -1,27 +1,39 @@
 .searchBar__searchEditor{
-  //width:227px;
   background-color:$invertDefaultColor;
   border:1px solid $altColor;
   border-radius: $borderRoundedSoft;
+  display:none;
+  font-family: $fontMono;
   left:15px;
+  //font-size:1em;
+  max-width:400px;
+  min-width:300px;
+  outline:none;
   padding:10px;
   position:absolute;
   top:43px;
-  display:none;
-  max-width:400px;
+  z-index:100;
+}
+
+.searchBar__searchInput--longSearchInput{
+  font-family: $fontMono !important;
 }
 
 .searchBar__searchEditorControl{
-  display:none;
+  visibility: hidden;
   &:checked + .searchBar__searchEditor{
     display:block;
   }
 }
 
+.searchBar__searchEditorControlLabel{
+  visibility: hidden;
+}
+
 .searchBar__expand{
-  opacity:0;
   color:$baseColorLight;
   margin-right:3px;
   padding:0;
+  visibility: hidden;
 }
 
