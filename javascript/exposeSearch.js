@@ -59,15 +59,15 @@ window.onload = function() {
                 editorField.style.display = "none";
             }
         },
-        toggleEditorShortCut: function (){
+        /*toggleEditorShortCut: function (event){
             if (event.keyCode === 17){
                 exposeSearch.toggleEditor();
             }
-        },
+        },*/
         handleKeyPress: function (){
             exposeSearch.expandIconCheck();
             exposeSearch.hideEditorWhenInputVisible();
-            exposeSearch.toggleEditorShortCut();
+            //exposeSearch.toggleEditorShortCut();
             if(this === searchInput) {
                 exposeSearch.placeInEditor();
             }else {
