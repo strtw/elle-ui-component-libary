@@ -1,24 +1,33 @@
-# Feb 2017 UI Framework Hackathon - Team 1 UI Framework
+# UI Framework Hackathon - UI Framework
 
 ## Live Site 
-- [Team 1 UI Framework - Elle Pure HTML/CSS UI Framework](https://strtw.github.io/md-hackathon-team-1/)
+- [Elle Pure HTML/CSS/JS UI Framework](https://strtw.github.io/md-hackathon-team-1/)
 
 ## Members: 
 - Brian - Project Manager
+- Stu - Product Manager
 - PJ
 - Rafael
 - Ruben 
-- Stu - Product Manager
+
 
 ## Project Background
 - [UI Frameworks Hackathon Details](https://qa.moderndeveloper.com/t/ui-frameworks-hackathon-details/2500)
 
 ## Implementation
 - Loosely followed [Design 5](images/design5.png)
-- Used SCSS/HTML -> No JavaScript
+- Used SCSS/HTML -> Minimal JavaScript
 - [7-1 Project Style](https://github.com/HugoGiraudel/sass-boilerplate)
 
-## Components Designed (20+)
+## Innovative Components
+
+- Long Search Editor [Stu]
+- Search w/ Loading Indicator [Brian]
+- Readability Improvement Panel [Rafael]
+- Swing Menu [Brian]
+- Fan Display [Brian]
+
+## All Components(20+)
 
 - Main Site [All]
 - Color Pallete [Brian]
@@ -42,7 +51,7 @@
 - Form - Contact [Stu]
 - Form - Sign Up [Stu]
 - Basic Search Bar [Brian]
-- Search w/ Long Edit [Stu][Innovative] 
+- Long Search Editor [Stu][Innovative] 
 - Search w/ Loading Indicator [Brian][Innovative] 
 - Progress Bar [Brian]
 - Toggles [Rafael]
@@ -56,16 +65,6 @@
 - Swing Menu [Brian][Innovative] 
 - Fan Display [Brian][Innovative] 
 - Scrollspy [Stu]
-
-
-
-## To Do 
-- [PJ], [Ruben]: Create innovative UI element. 
-
-
---- 
-
-### Other Ideas
 
 ### For more ideas see:
 - [Bootstrap Components](http://getbootstrap.com/components/)
