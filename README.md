@@ -21,7 +21,7 @@
 
 ## Innovative Components
 
-- Long Search Editor [Stu]
+- [Long Search Editor](https://strtw.github.io/md-hackathon-team-1/#Search) [Stu]
 - Search w/ Loading Indicator [Brian]
 - Readability Improvement Panel [Rafael]
 - Swing Menu [Brian]
