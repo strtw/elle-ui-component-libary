@@ -1,4 +1,4 @@
-# UI Framework Hackathon - UI Framework
+# Elle UI Framework
 
 ## Live Site 
 - [Elle Pure HTML/CSS/JS UI Framework](https://strtw.github.io/md-hackathon-team-1/)
