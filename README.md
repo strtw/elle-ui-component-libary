@@ -1,4 +1,5 @@
 # Elle UI Framework
+This framework is written entirely in HTML & CSS with a peppering of Vanilla JavaScript. It was built as part of a collaborative project for student in the first cohort of [Bov Academy](https://bovacademy.com/)
 
 ## Live Site 
 - [Elle Pure HTML/CSS/JS UI Framework](https://strtw.github.io/md-hackathon-team-1/)
